@@ -1,0 +1,2732 @@
+[
+    {
+        "id": "1",
+        "conversations": [
+        {
+            "from": "human",
+            "value": "What is Nebula Block?"
+        },
+        {
+            "from": "gpt",
+            "value": "Nebula Block is an innovative Montreal-based startup that provides secure, scalable, and cost-efficient cloud computing environments alongside cutting-edge AI tools, tailored for academic and commercial institutions."
+        }
+        ],
+        "model": "NebulaBlockDocsBot"
+    },
+    {
+        "id": "2",
+        "conversations": [
+        {
+            "from": "human",
+            "value": "What are the main products offered by Nebula Block?"
+        },
+        {
+            "from": "gpt",
+            "value": "Nebula Block offers three main products: Inference Models (serverless AI endpoints), GPU Instances (cloud computing resources), and Object Storage (scalable S3-compatible storage)."
+        }
+        ],
+        "model": "NebulaBlockDocsBot"
+    },
+    {
+        "id": "3",
+        "conversations": [
+        {
+            "from": "human",
+            "value": "How do I get started with Nebula Block?"
+        },
+        {
+            "from": "gpt",
+            "value": "To get started, you first need to create an account on the [Nebula Block website](https://www.nebulablock.com/register). Upon signing up, you'll receive $1 free credit, with an additional $9 if you use a referral code. Your access to products will depend on your account tier."
+        }
+        ],
+        "model": "NebulaBlockDocsBot"
+    },
+    {
+        "id": "4",
+        "conversations": [
+        {
+            "from": "human",
+            "value": "What is the Inference API (Inference Models) at Nebula Block?"
+        },
+        {
+            "from": "gpt",
+            "value": "The Inference API (Inference Models) provides serverless endpoints that host advanced generative AI models, such as large language models like Meta's Llama. It's OpenAI compatible and available at `https://inference.nebulablock.com/v1`, allowing for quick integration into projects with minimal setup."
+        }
+        ],
+        "model": "NebulaBlockDocsBot"
+    },
+    {
+        "id": "5",
+        "conversations": [
+        {
+            "from": "human",
+            "value": "What are GPU Instances?"
+        },
+        {
+            "from": "gpt",
+            "value": "GPU instances are on-demand cloud computing resources, including virtual machines, containers, and bare metal servers, equipped with powerful GPUs (NVIDIA H100, A100, L40S, RTX series). They are ideal for AI model training, data analysis, and complex simulations."
+        }
+        ],
+        "model": "NebulaBlockDocsBot"
+    },
+    {
+        "id": "6",
+        "conversations": [
+        {
+            "from": "human",
+            "value": "What is Object Storage?"
+        },
+        {
+            "from": "gpt",
+            "value": "Object Storage is a scalable, S3-compatible storage solution for storing and retrieving large amounts of unstructured data, such as datasets, model outputs, images, and videos. It offers high availability, durability, and secure options for data encryption."
+        }
+        ],
+        "model": "NebulaBlockDocsBot"
+    },
+    {
+        "id": "7",
+        "conversations": [
+        {
+            "from": "human",
+            "value": "How does billing work for Nebula Block services?"
+        },
+        {
+            "from": "gpt",
+            "value": "Billing is credit-based. You purchase credits, which are then deducted based on your product usage (e.g., hourly usage for GPU instances). Invoices are generated automatically for each credit purchase, and you can manage all billing information in the customer portal's 'Billing' tab."
+        }
+        ],
+        "model": "NebulaBlockDocsBot"
+    },
+    {
+        "id": "8",
+        "conversations": [
+        {
+            "from": "human",
+            "value": "What are SSH Keys and how are they used with Nebula Block?"
+        },
+        {
+            "from": "gpt",
+            "value": "SSH keys are secure credentials used to authenticate and connect you to your GPU instances remotely. They provide a more secure alternative to traditional passwords and their management is free of charge at Nebula Block."
+        }
+        ],
+        "model": "NebulaBlockDocsBot"
+    },
+    {
+        "id": "9",
+        "conversations": [
+        {
+            "from": "human",
+            "value": "How do I create an SSH Key through the Nebula Block UI?"
+        },
+        {
+            "from": "gpt",
+            "value": "To create an SSH Key via the UI, go to the [SSH Public Key](https://nebulablock.com/sshKey) tab in your customer portal, click \"Create\", enter the SSH key name and key data, then click \"Save\"."
+        }
+        ],
+        "model": "NebulaBlockDocsBot"
+    },
+    {
+        "id": "10",
+        "conversations": [
+        {
+            "from": "human",
+            "value": "What is an API Key and why is it important?"
+        },
+        {
+            "from": "gpt",
+            "value": "An API key is a unique identifier automatically issued to users upon signing up for Nebula Block. This key allows you to authenticate and interact with the platform's API endpoints, including Serverless AI. It's crucial for secure access to all resources."
+        }
+        ],
+        "model": "NebulaBlockDocsBot"
+    },
+    {
+        "id": "11",
+        "conversations": [
+        {
+            "from": "human",
+            "value": "How do I authenticate API requests with Nebula Block?"
+        },
+        {
+            "from": "gpt",
+            "value": "You can authenticate API requests using either access tokens or API keys. Both methods use Bearer authentication, requiring the header `Authorization: Bearer <token/key>` in your HTTP requests."
+        }
+        ],
+        "model": "NebulaBlockDocsBot"
+    },
+    {
+        "id": "12",
+        "conversations": [
+        {
+            "from": "human",
+            "value": "What is the difference between Access Tokens and API Keys for authentication?"
+        },
+        {
+            "from": "gpt",
+            "value": "Access tokens are obtained by logging in and expire after 2 hours, requiring frequent renewal. API keys, on the other hand, have no expiration date, making them convenient for long-term authentication. API keys are prefixed with `ak_`."
+        }
+        ],
+        "model": "NebulaBlockDocsBot"
+    },
+    {
+        "id": "13",
+        "conversations": [
+        {
+            "from": "human",
+            "value": "How do I create an API key via the API?"
+        },
+        {
+            "from": "gpt",
+            "value": "You can create an API key by sending a `POST` request to `{API_URL}/api_keys` with a `name` (required) and optional `description` in the request body. The API key value is returned only once upon creation for security reasons."
+        }
+        ],
+        "model": "NebulaBlockDocsBot"
+    },
+    {
+        "id": "14",
+        "conversations": [
+        {
+            "from": "human",
+            "value": "Can I view my API key after it's created?"
+        },
+        {
+            "from": "gpt",
+            "value": "No, for security reasons, the full API key value (`key`) is shown only once in the response body when you create it. If you lose your API key, you should create a new one and delete the old one."
+        }
+        ],
+        "model": "NebulaBlockDocsBot"
+    },
+    {
+        "id": "15",
+        "conversations": [
+        {
+            "from": "human",
+            "value": "How can I list my existing API keys?"
+        },
+        {
+            "from": "gpt",
+            "value": "You can list your API keys by sending a `GET` request to `{API_URL}/api_keys`. The response will include the `id`, `name`, `description`, and `partial_key_data` for each of your API keys."
+        }
+        ],
+        "model": "NebulaBlockDocsBot"
+    },
+    {
+        "id": "16",
+        "conversations": [
+        {
+            "from": "human",
+            "value": "How do I delete an API key?"
+        },
+        {
+            "from": "gpt",
+            "value": "To delete an API key, send a `DELETE` request to `{API_URL}/api_keys/{id}`, replacing `{id}` with the unique identifier of the API key you wish to delete. You can get the API key ID from the List API Keys endpoint."
+        }
+        ],
+        "model": "NebulaBlockDocsBot"
+    },
+    {
+        "id": "17",
+        "conversations": [
+        {
+            "from": "human",
+            "value": "What types of inference models are available on Nebula Block?"
+        },
+        {
+            "from": "gpt",
+            "value": "Nebula Block's Inference API supports various types of inference, including Text Generation, Text Generation (Vision), Image Generation, and Embedding Generation."
+        }
+        ],
+        "model": "NebulaBlockDocsBot"
+    },
+    {
+        "id": "18",
+        "conversations": [
+        {
+            "from": "human",
+            "value": "What text generation models can I use on Nebula Block?"
+        },
+        {
+            "from": "gpt",
+            "value": "For text generation, you can use models like DeepSeek-V3-0324, DeepSeek-R1-Distill-Llama-70B, DeepSeek-R1-Distill-Qwen-32B, Llama3.3-70B, Qwen-QwQ-32B, and Qwen2.5-Coder-32B (specialized in code generation)."
+        }
+        ],
+        "model": "NebulaBlockDocsBot"
+    },
+    {
+        "id": "19",
+        "conversations": [
+        {
+            "from": "human",
+            "value": "How do I generate text using the Inference API via cURL?"
+        },
+        {
+            "from": "gpt",
+            "value": "You can generate text by sending a `POST` request to `https://inference.nebulablock.com/v1/chat/completions`. Here's a cURL example:\n\n```bash\ncurl -X POST \"https://inference.nebulablock.com/v1/chat/completions\" \\\n    -H \"Content-Type: application/json\" \\\n    -H \"Authorization: Bearer $NEBULA_API_KEY\" \\\n    --data-raw '{\n        \"messages\": [\n\t  {\"role\":\"user\",\"content\":\"Is Montreal a thriving hub for the AI industry?\"}\n\t],\n        \"model\": \"meta-llama/Llama-3.3-70B-Instruct\",\n        \"max_tokens\": null, \n        \"temperature\": 1,\n        \"top_p\": 0.9,\n        \"stream\": false\n    }'\n```"
+        }
+        ],
+        "model": "NebulaBlockDocsBot"
+    },
+    {
+        "id": "20",
+        "conversations": [
+        {
+            "from": "human",
+            "value": "What parameters can I tweak when generating text?"
+        },
+        {
+            "from": "gpt",
+            "value": "When generating text, you can tweak parameters such as `messages` (the dialogue), `System Prompt` (AI instructions), `Output Length` (max tokens), `Temperature` (randomness), `Top P` (diversity), and `Stream` (for chunked responses)."
+        }
+        ],
+        "model": "NebulaBlockDocsBot"
+    },
+    {
+        "id": "21",
+        "conversations": [
+        {
+            "from": "human",
+            "value": "How do vision models differ from standard text generation models?"
+        },
+        {
+            "from": "gpt",
+            "value": "Vision models behave similarly to text models but have the added capability to accept and interpret images as input, alongside text. This allows them to process both visual and textual information."
+        }
+        ],
+        "model": "NebulaBlockDocsBot"
+    },
+    {
+        "id": "22",
+        "conversations": [
+        {
+            "from": "human",
+            "value": "What vision model is available on Nebula Block?"
+        },
+        {
+            "from": "gpt",
+            "value": "Currently, the Qwen2.5-VL-7B-Instruct model is available for Text Generation (Vision), designed to understand and process both visual and textual inputs."
+        }
+        ],
+        "model": "NebulaBlockDocsBot"
+    },
+    {
+        "id": "23",
+        "conversations": [
+        {
+            "from": "human",
+            "value": "How do I use the Qwen2.5-VL-7B-Instruct model with an image URL via the API?"
+        },
+        {
+            "from": "gpt",
+            "value": "You can use the Qwen2.5-VL-7B-Instruct model by including an `image_url` type in the `messages` content. Here's a Python example:\n\n```python\nimport requests \nimport os\n \nurl = \"https://inference.nebulablock.com/v1/chat/completions\"\n\nheaders = { \n    \"Content-Type\": \"application/json\", \n    \"Authorization\": f\"Bearer {os.environ.get('NEBULA_API_KEY')}\" \n} \n \ndata = {\n    \"messages\":[\n\t\t{\"role\":\"user\",\"content\":[\n\t\t{\"type\":\"image_url\",\"image_url\":\n\t\t{\"url\":\"https://qianwen-res.oss-cn-beijing.aliyuncs.com/Qwen-VL/assets/demo.jpeg\"}},\n\t\t{\"type\":\"text\",\"text\":\"What is this image?\"}\n\t]}],\n    \"model\":\"Qwen/Qwen2.5-VL-7B-Instruct\",\n    \"max_tokens\":None,\n    \"temperature\":1,\n    \"top_p\":0.9,\n    \"stream\":False\n}\n\nresponse = requests.post(url, headers=headers, json=data) \nprint(response.json())\n```"
+        }
+        ],
+        "model": "NebulaBlockDocsBot"
+    },
+    {
+        "id": "24",
+        "conversations": [
+        {
+            "from": "human",
+            "value": "What is Embedding Generation used for?"
+        },
+        {
+            "from": "gpt",
+            "value": "Embedding Generation models convert data (text, images, code) into dense numerical vectors called embeddings. These embeddings capture semantic relationships, enabling efficient data comparison and retrieval for tasks like search, recommendation, or clustering."
+        }
+        ],
+        "model": "NebulaBlockDocsBot"
+    },
+    {
+        "id": "25",
+        "conversations": [
+        {
+            "from": "human",
+            "value": "Which embedding models are supported by Nebula Block?"
+        },
+        {
+            "from": "gpt",
+            "value": "Nebula Block supports UAE-Large-V1 (good for general-purpose text embeddings) and BGE Large EN v1.5 (optimized for English text embeddings)."
+        }
+        ],
+        "model": "NebulaBlockDocsBot"
+    },
+    {
+        "id": "26",
+        "conversations": [
+        {
+            "from": "human",
+            "value": "How do I generate embeddings via the API?"
+        },
+        {
+            "from": "gpt",
+            "value": "You can generate embeddings by sending a `POST` request to `https://inference.nebulablock.com/v1/embeddings`. You need to specify the `model` and an `input` list of strings in the request body. Here's a JavaScript example:\n\n```javascript\nconst url = 'https://inference.nebulablock.com/v1/embeddings';\n\nconst headers = {\n    \"Content-Type\": \"application/json\",\n    \"Authorization\": `Bearer ${process.env.NEBULA_API_KEY}`\n};\n\nconst data = {\n    \"model\": \"WhereIsAI/UAE-Large-V1\",\n    \"input\": [\n        \"Bananas are berries, but strawberries are not, according to botanical classifications.\",\n        \"The Eiffel Tower in Paris was originally intended to be a temporary structure.\"\n    ]\n};\n\nfetch(url, {\n    method: 'POST',\n    headers: headers,\n    body: JSON.stringify(data)\n})\n    .then(response => response.json())\n    .then(data => {\n        console.log(JSON.stringify(data, null, 2));\n    })\n    .catch(error => console.error('Error:', error));\n```"
+        }
+        ],
+        "model": "NebulaBlockDocsBot"
+    },
+    {
+        "id": "27",
+        "conversations": [
+        {
+            "from": "human",
+            "value": "What kind of image generation models does Nebula Block offer?"
+        },
+        {
+            "from": "gpt",
+            "value": "Nebula Block offers both Text-to-Image models (StableDiffusion XL 1.0, Flux.1 schnell) and Image-to-Image models (Flux.1 Fill Dev, which is specialized in image inpainting)."
+        }
+        ],
+        "model": "NebulaBlockDocsBot"
+    },
+    {
+        "id": "28",
+        "conversations": [
+        {
+            "from": "human",
+            "value": "What parameters are important for Image Generation models?"
+        },
+        {
+            "from": "gpt",
+            "value": "Key parameters for Image Generation include `prompt`, `negative_prompt`, `width`, `height`, `num_steps`, `guidance_scale`, `seed` (for Flux.1 schnell), `input_image` (for Image-to-Image), and `mask_image` (for Image-to-Image)."
+        }
+        ],
+        "model": "NebulaBlockDocsBot"
+    },
+    {
+        "id": "29",
+        "conversations": [
+        {
+            "from": "human",
+            "value": "How do I generate an image using a Text-to-Image model via the API?"
+        },
+        {
+            "from": "gpt",
+            "value": "You can generate an image using a Text-to-Image model by sending a `POST` request to `https://api.nebulablock.com/api/v1/images/generation`. Here's a Python example:\n\n```python\nimport requests \nimport os\n\nurl = \"https://api.nebulablock.com/api/v1/images/generation\" \n\nheaders = {  \n    \"Content-Type\": \"application/json\",  \n    \"Authorization\": f\"Bearer {os.environ.get('NEBULA_API_KEY')}\" \n} \n\ndata = {\n    \"model\":\"stabilityai/stable-diffusion-xl-base-1.0\",\n    \"prompt\":\"a flying cat\",\n    \"num_steps\":25,\n    \"guidance_scale\":9,\n    \"negative_prompt\": None,\n    \"width\":1024,\n    \"height\":1024\n}\n\nresponse = requests.post(url, headers=headers, json=data) \nprint(response.json())\n```"
+        }
+        ],
+        "model": "NebulaBlockDocsBot"
+    },
+    {
+        "id": "30",
+        "conversations": [
+        {
+            "from": "human",
+            "value": "What is the `b64_json` field in the Image Generation API response?"
+        },
+        {
+            "from": "gpt",
+            "value": "The `b64_json` field in the Image Generation API response contains the base64-encoded JSON data of the generated image. You will need to use an image base64 decoder to view the actual image."
+        }
+        ],
+        "model": "NebulaBlockDocsBot"
+    },
+    {
+        "id": "31",
+        "conversations": [
+        {
+            "from": "human",
+            "value": "What types of GPUs are available for GPU Instances on Nebula Block?"
+        },
+        {
+            "from": "gpt",
+            "value": "Nebula Block offers the latest NVIDIA GPUs for GPU Instances, including H200, H100, L40S, and RTX series (A6000, 4090)."
+        }
+        ],
+        "model": "NebulaBlockDocsBot"
+    },
+    {
+        "id": "32",
+        "conversations": [
+        {
+            "from": "human",
+            "value": "How do I deploy a GPU Instance on Nebula Block?"
+        },
+        {
+            "from": "gpt",
+            "value": "To deploy a GPU Instance, you need to log in to the Nebula Block website, then choose a location (region), select your desired hardware configuration (GPU type, CPU, RAM), choose an Operating System/Image, select an SSH Public Key (or use password authentication), set a server name, and finally click 'Deploy'."
+        }
+        ],
+        "model": "NebulaBlockDocsBot"
+    },
+    {
+        "id": "33",
+        "conversations": [
+        {
+            "from": "human",
+            "value": "How do I connect to my GPU Instance using SSH Key Authentication?"
+        },
+        {
+            "from": "gpt",
+            "value": "Once your instance is running, you can connect using SSH with your private key: `ssh -i /path/to/your/private/key username@instance-ip`. Replace placeholders with your actual private key path, instance username, and public IP address (found in your instance detail page)."
+        }
+        ],
+        "model": "NebulaBlockDocsBot"
+    },
+    {
+        "id": "34",
+        "conversations": [
+        {
+            "from": "human",
+            "value": "How can I list available GPU instance products via the API?"
+        },
+        {
+            "from": "gpt",
+            "value": "You can retrieve a list of available GPU instance hardware configurations by sending a `GET` request to `{API_URL}/computing/products`. This will return details such as ID, region, price, CPU, RAM, GPU type, and stock."
+        }
+        ],
+        "model": "NebulaBlockDocsBot"
+    },
+    {
+        "id": "35",
+        "conversations": [
+        {
+            "from": "human",
+            "value": "How do I create a GPU instance using the Platform API?"
+        },
+        {
+            "from": "gpt",
+            "value": "You can create a GPU instance by sending a `POST` request to `{API_URL}/computing/instance`. The request body must include `instance_name`, `product_id`, `image_id`, and `ssh_key_id`. Ensure `image_id` and `product_id` are from the same data center and region."
+        }
+        ],
+        "model": "NebulaBlockDocsBot"
+    },
+    {
+        "id": "36",
+        "conversations": [
+        {
+            "from": "human",
+            "value": "How can I list all active GPU instances for my user account?"
+        },
+        {
+            "from": "gpt",
+            "value": "To list all your active GPU instances, send a `GET` request to `{API_URL}/computing/instances`. You can optionally include `limit` and `offset` query parameters for pagination."
+        }
+        ],
+        "model": "NebulaBlockDocsBot"
+    },
+    {
+        "id": "37",
+        "conversations": [
+        {
+            "from": "human",
+            "value": "How do I get detailed information about a specific GPU instance?"
+        },
+        {
+            "from": "gpt",
+            "value": "You can retrieve detailed information for a specific GPU instance by sending a `GET` request to `{API_URL}/computing/instance/{id}`, replacing `{id}` with the unique identifier of the instance you're interested in."
+        }
+        ],
+        "model": "NebulaBlockDocsBot"
+    },
+    {
+        "id": "38",
+        "conversations": [
+        {
+            "from": "human",
+            "value": "How do I stop a running GPU instance via the API?"
+        },
+        {
+            "from": "gpt",
+            "value": "To stop a GPU instance, send a `GET` request to `{API_URL}/computing/instance/{id}/stop`, where `{id}` is the instance's unique identifier."
+        }
+        ],
+        "model": "NebulaBlockDocsBot"
+    },
+    {
+        "id": "39",
+        "conversations": [
+        {
+            "from": "human",
+            "value": "How can I restart a GPU instance?"
+        },
+        {
+            "from": "gpt",
+            "value": "To reboot a GPU instance, send a `GET` request to `{API_URL}/computing/instance/{id}/reboot`, replacing `{id}` with the instance's unique identifier."
+        }
+        ],
+        "model": "NebulaBlockDocsBot"
+    },
+    {
+        "id": "40",
+        "conversations": [
+        {
+            "from": "human",
+            "value": "How do I permanently delete a GPU instance?"
+        },
+        {
+            "from": "gpt",
+            "value": "To permanently delete a GPU instance, send a `DELETE` request to `{API_URL}/computing/instance/{id}`, where `{id}` is the unique identifier of the instance to be deleted."
+        }
+        ],
+        "model": "NebulaBlockDocsBot"
+    },
+    {
+        "id": "41",
+        "conversations": [
+        {
+            "from": "human",
+            "value": "Can I see a list of GPU instances that have been deleted?"
+        },
+        {
+            "from": "gpt",
+            "value": "Yes, you can retrieve a list of all deleted instances by sending a `GET` request to `{API_URL}/computing/deleted-instances`. This endpoint also supports `limit` and `offset` for pagination."
+        }
+        ],
+        "model": "NebulaBlockDocsBot"
+    },
+    {
+        "id": "42",
+        "conversations": [
+        {
+            "from": "human",
+            "value": "What kind of operating system images are available for GPU instances?"
+        },
+        {
+            "from": "gpt",
+            "value": "Nebula Block offers a variety of operating system images, including different versions of Ubuntu Server (e.g., Ubuntu Server 22.04 LTS) and options with specific CUDA drivers."
+        }
+        ],
+        "model": "NebulaBlockDocsBot"
+    },
+    {
+        "id": "43",
+        "conversations": [
+        {
+            "from": "human",
+            "value": "How do I get a list of available OS images for GPU instances via the API?"
+        },
+        {
+            "from": "gpt",
+            "value": "You can get a list of all available operating system images by sending a `GET` request to `{API_URL}/computing/images`. The response will be grouped by region and include details like `id`, `dc_id`, `os_name`, `os_type`, and `region`."
+        }
+        ],
+        "model": "NebulaBlockDocsBot"
+    },
+    {
+        "id": "44",
+        "conversations": [
+        {
+            "from": "human",
+            "value": "What are the key features of Nebula Block's Object Storage?"
+        },
+        {
+            "from": "gpt",
+            "value": "Nebula Block's Object Storage features an S3-Compatible API, interactive UI for live use, comprehensive tutorials (Windows, Linux, Mac), scalable and durable storage, customizable configurations, and strong security options for data in transit and at rest."
+        }
+        ],
+        "model": "NebulaBlockDocsBot"
+    },
+    {
+        "id": "45",
+        "conversations": [
+        {
+            "from": "human",
+            "value": "What are the prerequisites for using Object Storage?"
+        },
+        {
+            "from": "gpt",
+            "value": "To use Object Storage, you need a Nebula Block account and a minimum credit balance of $0.01."
+        }
+        ],
+        "model": "NebulaBlockDocsBot"
+    },
+    {
+        "id": "46",
+        "conversations": [
+        {
+            "from": "human",
+            "value": "How is Object Storage priced?"
+        },
+        {
+            "from": "gpt",
+            "value": "Object Storage operates on a Pay-As-You-Go model, with charges based on storage usage and data transfer, updated hourly."
+        }
+        ],
+        "model": "NebulaBlockDocsBot"
+    },
+    {
+        "id": "47",
+        "conversations": [
+        {
+            "from": "human",
+            "value": "How do I create a new Object Storage deployment?"
+        },
+        {
+            "from": "gpt",
+            "value": "Navigate to the 'Object Storage' tab in the UI, click 'Create', select your configuration, provide a unique name (no spaces), and click 'Create'. Your new deployment will appear in the list."
+        }
+        ],
+        "model": "NebulaBlockDocsBot"
+    },
+    {
+        "id": "48",
+        "conversations": [
+        {
+            "from": "human",
+            "value": "What are the rules for naming Object Storage buckets?"
+        },
+        {
+            "from": "gpt",
+            "value": "Bucket names must be globally unique and follow specific rules: only lowercase letters (a-z), numbers (0-9), and hyphens (-); must begin with a letter or number; length between 3 to 63 characters; cannot contain uppercase letters, underscores, spaces, or other special characters; avoid starting or ending with a hyphen."
+        }
+        ],
+        "model": "NebulaBlockDocsBot"
+    },
+    {
+        "id": "49",
+        "conversations": [
+        {
+            "from": "human",
+            "value": "How do I upload a file to an Object Storage bucket via the UI?"
+        },
+        {
+            "from": "gpt",
+            "value": "In the bucket view, click the 'Upload' button, then 'Upload File' to select a file from your local system. Finally, click 'Upload'. Note that files must not exceed 50 MB via the UI."
+        }
+        ],
+        "model": "NebulaBlockDocsBot"
+    },
+    {
+        "id": "50",
+        "conversations": [
+        {
+            "from": "human",
+            "value": "How can I delete files from an Object Storage bucket?"
+        },
+        {
+            "from": "gpt",
+            "value": "In the bucket view, you can select multiple files and folders, then click the 'Delete' button. The selected items will be permanently deleted."
+        }
+        ],
+        "model": "NebulaBlockDocsBot"
+    },
+    {
+        "id": "51",
+        "conversations": [
+        {
+            "from": "human",
+            "value": "How do I delete an entire Object Storage bucket?"
+        },
+        {
+            "from": "gpt",
+            "value": "In the list of your buckets, click the 'Delete' button next to the bucket you want to remove. Be aware that deleting a bucket permanently removes it along with all its contents, and this action cannot be undone."
+        }
+        ],
+        "model": "NebulaBlockDocsBot"
+    },
+    {
+        "id": "52",
+        "conversations": [
+        {
+            "from": "human",
+            "value": "How do I set up `s3cmd` on Linux or Mac for Object Storage?"
+        },
+        {
+            "from": "gpt",
+            "value": "First, install `s3cmd` based on your OS. Then, run `s3cmd --configure` in your terminal. You'll be prompted for your Access Key, Secret Key (from your storage details page), Default Region (US), S3 Endpoint (your storage's Hostname), and DNS-style bucket+hostname (also your Hostname). You can accept defaults for other settings or configure as needed."
+        }
+        ],
+        "model": "NebulaBlockDocsBot"
+    },
+    {
+        "id": "53",
+        "conversations": [
+        {
+            "from": "human",
+            "value": "How do I list buckets using `s3cmd`?"
+        },
+        {
+            "from": "gpt",
+            "value": "After configuring `s3cmd`, you can list all your buckets by running:\n```bash\ns3cmd ls\n```"
+        }
+        ],
+        "model": "NebulaBlockDocsBot"
+    },
+    {
+        "id": "54",
+        "conversations": [
+        {
+            "from": "human",
+            "value": "How do I upload a file to a bucket using `s3cmd`?"
+        },
+        {
+            "from": "gpt",
+            "value": "Use the `put` command: `s3cmd put <local_file_path> s3://<bucket_name>/<remote_file_name>`. For example: `s3cmd put test_file.txt s3://my-bucket/uploaded_test.txt`."
+        }
+        ],
+        "model": "NebulaBlockDocsBot"
+    },
+    {
+        "id": "55",
+        "conversations": [
+        {
+            "from": "human",
+            "value": "Can I upload an entire folder with `s3cmd`?"
+        },
+        {
+            "from": "gpt",
+            "value": "Yes, you can upload the contents of a folder (not the folder itself) using the `--recursive` flag: `s3cmd put --recursive <local_folder_path> s3://<bucket_name>/<object_name>`. Note there might be a delay for files to appear in the UI."
+        }
+        ],
+        "model": "NebulaBlockDocsBot"
+    },
+    {
+        "id": "56",
+        "conversations": [
+        {
+            "from": "human",
+            "value": "How do I download a file from a bucket using `s3cmd`?"
+        },
+        {
+            "from": "gpt",
+            "value": "Use the `get` command: `s3cmd get s3://<bucket_name>/<object_name> <local_file_path>`. For example: `s3cmd get s3://test-bucket/image.jpg ~/Downloads/image.jpg`."
+        }
+        ],
+        "model": "NebulaBlockDocsBot"
+    },
+    {
+        "id": "57",
+        "conversations": [
+        {
+            "from": "human",
+            "value": "Does Nebula Block provide SDKs for Object Storage?"
+        },
+        {
+            "from": "gpt",
+            "value": "Yes, Nebula Block provides SDK examples for Object Storage using S3-compatible APIs for Golang (AWS SDK for Go), Python (boto3), and Java (AWS SDK for Java)."
+        }
+        ],
+        "model": "NebulaBlockDocsBot"
+    },
+    {
+        "id": "58",
+        "conversations": [
+        {
+            "from": "human",
+            "value": "How do I configure the Python boto3 SDK to connect to Nebula Block Object Storage?"
+        },
+        {
+            "from": "gpt",
+            "value": "You need to set up your AWS credentials (access key ID, secret access key), endpoint URL (your hostname), and region in a `.env` file or directly in your script. Then, initialize a `boto3.client` with these configurations, ensuring `signature_version='s3v4'` and `endpoint_url` with `https://` prefix."
+        }
+        ],
+        "model": "NebulaBlockDocsBot"
+    },
+    {
+        "id": "59",
+        "conversations": [
+        {
+            "from": "human",
+            "value": "Can I generate a presigned URL for an object in Nebula Block storage using the Python SDK?"
+        },
+        {
+            "from": "gpt",
+            "value": "Yes, the `boto3` client offers a `generate_presigned_url` method. You would use `s3_client.generate_presigned_url('get_object', Params={'Bucket': NEBULA_CONFIG['bucket_name'], 'Key': object_name}, ExpiresIn=expiration)` to create a temporary URL for direct access to the object."
+        }
+        ],
+        "model": "NebulaBlockDocsBot"
+    },
+    {
+        "id": "60",
+        "conversations": [
+        {
+            "from": "human",
+            "value": "What are the different tier levels in Nebula Block?"
+        },
+        {
+            "from": "gpt",
+            "value": "Nebula Block has five tier levels: Engineer Tier 1, Engineer Tier 2, Engineer Tier 3, Expert Tier 1, and Expert Tier 2. Each tier has different requirements and benefits."
+        }
+        ],
+        "model": "NebulaBlockDocsBot"
+    },
+    {
+        "id": "61",
+        "conversations": [
+        {
+            "from": "human",
+            "value": "What are the requirements for Engineer Tier 1 and its benefits?"
+        },
+        {
+            "from": "gpt",
+            "value": "Engineer Tier 1 is available to all users upon sign-up. It provides a request rate limit of 60 RPM and a token rate of 60,000 TPM for serverless endpoints, but no CPU and GPU access."
+        }
+        ],
+        "model": "NebulaBlockDocsBot"
+    },
+    {
+        "id": "62",
+        "conversations": [
+        {
+            "from": "human",
+            "value": "How do I reach Engineer Tier 2 and what do I get?"
+        },
+        {
+            "from": "gpt",
+            "value": "Engineer Tier 2 requires adding a credit card to your account. This increases your request rate to 300 RPM and token rate to 150,000 TPM. It still does not grant GPU access."
+        }
+        ],
+        "model": "NebulaBlockDocsBot"
+    },
+    {
+        "id": "63",
+        "conversations": [
+        {
+            "from": "human",
+            "value": "What is required for Engineer Tier 3 and does it include GPU access?"
+        },
+        {
+            "from": "gpt",
+            "value": "Engineer Tier 3 requires a $10 deposit. Yes, it grants GPU access, and increases your request rate to 600 RPM and token rate to 200,000 TPM."
+        }
+        ],
+        "model": "NebulaBlockDocsBot"
+    },
+    {
+        "id": "64",
+        "conversations": [
+        {
+            "from": "human",
+            "value": "What are the benefits of Expert Tier 1?"
+        },
+        {
+            "from": "gpt",
+            "value": "Expert Tier 1 requires a $30 total spend on the platform. It grants GPU access, boosts your request rate to 1,500 RPM, and your token rate to 500,000 TPM."
+        }
+        ],
+        "model": "NebulaBlockDocsBot"
+    },
+    {
+        "id": "65",
+        "conversations": [
+        {
+            "from": "human",
+            "value": "What is the highest tier and its benefits?"
+        },
+        {
+            "from": "gpt",
+            "value": "The highest tier is Expert Tier 2, which requires a $50 total spend. It grants GPU access, and offers the highest request rate of 3,000 RPM and token rate of 800,000 TPM."
+        }
+        ],
+        "model": "NebulaBlockDocsBot"
+    },
+    {
+        "id": "66",
+        "conversations": [
+        {
+            "from": "human",
+            "value": "How does the referral program work at Nebula Block?"
+        },
+        {
+            "from": "gpt",
+            "value": "The referral program rewards users for inviting others. Each user gets a unique referral code. New users signing up with a code receive a $10 welcome bonus, while those without get $1 (they can apply a code later for an additional $9)."
+        }
+        ],
+        "model": "NebulaBlockDocsBot"
+    },
+    {
+        "id": "67",
+        "conversations": [
+        {
+            "from": "human",
+            "value": "What is the commission structure for referrers in the referral program?"
+        },
+        {
+            "from": "gpt",
+            "value": "Referrers earn commissions based on their referees' total spending, with tiers:\n\n| Tier | Referees' Total Spend | Serverless Endpoint Commission | Compute Commission |\n|---|---|---|---|\n| 1 | $0 - $1,000 | 3% | 1% |\n| 2 | $1,000 - $2,500 | 5% | 1% |\n| 3 | $2,500 - $5,000 | 10% | 1% |\n| 4 | $5,000 and above | 15% | 1% |"
+        }
+        ],
+        "model": "NebulaBlockDocsBot"
+    },
+    {
+        "id": "68",
+        "conversations": [
+        {
+            "from": "human",
+            "value": "When and how are referral earnings paid out?"
+        },
+        {
+            "from": "gpt",
+            "value": "Payouts are made on the first day of each month. Earnings are credited directly to the user's account as platform credits."
+        }
+        ],
+        "model": "NebulaBlockDocsBot"
+    },
+    {
+        "id": "69",
+        "conversations": [
+        {
+            "from": "human",
+            "value": "How can a new user apply a referral code after signing up without one?"
+        },
+        {
+            "from": "gpt",
+            "value": "Users who signed up without a referral code can still receive the additional $9 bonus by going to the 'Referral Section' in the customer portal, entering and applying the referral code. The bonus will be credited instantly."
+        }
+        ],
+        "model": "NebulaBlockDocsBot"
+    },
+    {
+        "id": "70",
+        "conversations": [
+        {
+            "from": "human",
+            "value": "How do I add a payment card to my Nebula Block account?"
+        },
+        {
+            "from": "gpt",
+            "value": "Navigate to the 'Add a New Card' button on the billing page in your customer portal, and enter your card details. Nebula Block accepts all types of payment cards, and your card may be validated without charge."
+        }
+        ],
+        "model": "NebulaBlockDocsBot"
+    },
+    {
+        "id": "71",
+        "conversations": [
+        {
+            "from": "human",
+            "value": "Can I use the same payment card on multiple Nebula Block accounts?"
+        },
+        {
+            "from": "gpt",
+            "value": "No, you cannot add the same payment card on different accounts. Duplicate payment cards are not allowed across accounts."
+        }
+        ],
+        "model": "NebulaBlockDocsBot"
+    },
+    {
+        "id": "72",
+        "conversations": [
+        {
+            "from": "human",
+            "value": "How do I purchase credits on Nebula Block?"
+        },
+        {
+            "from": "gpt",
+            "value": "To purchase credits, go to the billing page in the customer portal, select the desired amount, and complete the purchase using your default payment card or a new card. Credits are the sole currency for product payments."
+        }
+        ],
+        "model": "NebulaBlockDocsBot"
+    },
+    {
+        "id": "73",
+        "conversations": [
+        {
+            "from": "human",
+            "value": "What is Auto-Pay and how do I configure it?"
+        },
+        {
+            "from": "gpt",
+            "value": "Auto-Pay enables automatic billing. You can toggle the Auto-Pay switch on the billing page, set your preferred threshold (when to reload) and reload amount. When your balance falls below the threshold, your default card will be charged the set amount (maximum once per hour) to ensure you don't run out of credits."
+        }
+        ],
+        "model": "NebulaBlockDocsBot"
+    },
+    {
+        "id": "74",
+        "conversations": [
+        {
+            "from": "human",
+            "value": "Where can I view my invoices and usage details?"
+        },
+        {
+            "from": "gpt",
+            "value": "All your transactions, including credit purchases and usage billing, are documented as downloadable invoices in the 'Transaction' section of the billing page. Usage rates for your products can be seen in the 'Usages' section of the same page."
+        }
+        ],
+        "model": "NebulaBlockDocsBot"
+    },
+    {
+        "id": "75",
+        "conversations": [
+        {
+            "from": "human",
+            "value": "How do I retrieve my current credit balance via the API?"
+        },
+        {
+            "from": "gpt",
+            "value": "You can retrieve your current credit balance by sending a `GET` request to `{API_URL}/users/credits`. The response will include your `available_balance`."
+        }
+        ],
+        "model": "NebulaBlockDocsBot"
+    },
+    {
+        "id": "76",
+        "conversations": [
+        {
+            "from": "human",
+            "value": "How can I get my payment history through the API?"
+        },
+        {
+            "from": "gpt",
+            "value": "To retrieve your credit payment history, send a `GET` request to `{API_URL}/users/credits/history`. You can use `limit` and `offset` query parameters to paginate the results."
+        }
+        ],
+        "model": "NebulaBlockDocsBot"
+    },
+    {
+        "id": "77",
+        "conversations": [
+        {
+            "from": "human",
+            "value": "How do I download a specific invoice using the API?"
+        },
+        {
+            "from": "gpt",
+            "value": "You can download a specific invoice by sending a `GET` request to `{API_URL}/users/invoice-download/{invoice_id}`, where `{invoice_id}` is the unique identifier of the invoice (obtained from the `id` field in the List Invoices endpoint response). The PDF file will be downloaded automatically."
+        }
+        ],
+        "model": "NebulaBlockDocsBot"
+    },
+    {
+        "id": "78",
+        "conversations": [
+        {
+            "from": "human",
+            "value": "What is the primary function of the Platform API?"
+        },
+        {
+            "from": "gpt",
+            "value": "The Platform API (`https://api.nebulablock.com/api/v1`) is used for all non-inference operations, such as provisioning GPU instances, managing object storage, handling billing, and updating account settings."
+        }
+        ],
+        "model": "NebulaBlockDocsBot"
+    },
+    {
+        "id": "79",
+        "conversations": [
+        {
+            "from": "human",
+            "value": "What is the primary function of the Inference API?"
+        },
+        {
+            "from": "gpt",
+            "value": "The Inference API (`https://inference.nebulablock.com/v1`) provides OpenAI-compatible endpoints specifically for running generative AI inference, including text generation, vision tasks, image generation, and embedding generation."
+        }
+        ],
+        "model": "NebulaBlockDocsBot"
+    },
+    {
+        "id": "80",
+        "conversations": [
+        {
+            "from": "human",
+            "value": "How do Teams work on Nebula Block?"
+        },
+        {
+            "from": "gpt",
+            "value": "Teams allow users to collaborate, share resources, and manage access to inferences with other users. You can invite colleagues, assign roles, and work together on projects seamlessly."
+        }
+        ],
+        "model": "NebulaBlockDocsBot"
+    },
+    {
+        "id": "81",
+        "conversations": [
+        {
+            "from": "human",
+            "value": "What are the different roles available in Nebula Block Teams and their permissions?"
+        },
+        {
+            "from": "gpt",
+            "value": "Nebula Block Teams offer three roles:\n- **Member**: Limited access, primarily for account usage and existing inferences connections. Can view personal usage analytics.\n- **Admin**: All Member permissions, plus member management and viewing detailed usage analytics for team's inference requests.\n- **Owner**: Full control, including all Admin and Member permissions, ability to create/delete Teams, and transfer ownership."
+        }
+        ],
+        "model": "NebulaBlockDocsBot"
+    },
+    {
+        "id": "82",
+        "conversations": [
+        {
+            "from": "human",
+            "value": "How can I invite a user to my team?"
+        },
+        {
+            "from": "gpt",
+            "value": "To invite a user, navigate to your Team page, select the 'Invite Member' button in the Members Management section, choose the desired role for the new user, copy the invite link generated, and send it to the user. They can then click the link to join."
+        }
+        ],
+        "model": "NebulaBlockDocsBot"
+    },
+    {
+        "id": "83",
+        "conversations": [
+        {
+            "from": "human",
+            "value": "Where can I manage pending team invitations?"
+        },
+        {
+            "from": "gpt",
+            "value": "You can track and manage all pending invitations in the 'Pending Invites' section of your Team page. This allows you to view outstanding invitations and cancel any that are no longer needed."
+        }
+        ],
+        "model": "NebulaBlockDocsBot"
+    },
+    {
+        "id": "84",
+        "conversations": [
+        {
+            "from": "human",
+            "value": "What kind of usage analytics do Teams provide?"
+        },
+        {
+            "from": "gpt",
+            "value": "Teams provide comprehensive usage analytics, including model usage statistics (how your team uses models), detailed usage records for inference requests, and resource monitoring for inferences, billing, and performance metrics."
+        }
+        ],
+        "model": "NebulaBlockDocsBot"
+    },
+    {
+        "id": "85",
+        "conversations": [
+        {
+            "from": "human",
+            "value": "What are the security considerations for Team API Keys?"
+        },
+        {
+            "from": "gpt",
+            "value": "Team API keys provide full access to resources and must be handled with care. Keep them secure, never share them publicly, avoid committing them to version control, rotate keys regularly, and use environment variables to store them in applications."
+        }
+        ],
+        "model": "NebulaBlockDocsBot"
+    },
+    {
+        "id": "86",
+        "conversations": [
+        {
+            "from": "human",
+            "value": "What is the glossary for Nebula Block?"
+        },
+        {
+            "from": "gpt",
+            "value": "The glossary defines key terms related to Nebula Block's services:\n- **Inference API**: OpenAI-compatible API for generative AI inference.\n- **GPU Instances**: Virtual machines with GPUs for compute-intensive tasks.\n- **Object Storage**: Scalable storage for unstructured data.\n- **SSH Keys**: Cryptographic keys for secure instance access.\n- **API Key**: Unique identifier for API authentication.\n- **Tier**: Service/pricing plans based on resource limits.\n- **Referral**: Program rewarding users for inviting others."
+        }
+        ],
+        "model": "NebulaBlockDocsBot"
+    },
+    {
+        "id": "87",
+        "conversations": [
+        {
+            "from": "human",
+            "value": "How do I contact Nebula Block support?"
+        },
+        {
+            "from": "gpt",
+            "value": "You can contact Nebula Block by emailing us directly at [contact@nebulablock.com](mailto:contact@nebulablock.com) or by visiting our [contact page](https://www.nebulablock.com/contact)."
+        }
+        ],
+        "model": "NebulaBlockDocsBot"
+    },
+    {
+        "id": "88",
+        "conversations": [
+        {
+            "from": "human",
+            "value": "How do I update my account information?"
+        },
+        {
+            "from": "gpt",
+            "value": "To update your account information, log into the [customer portal](https://nebulablock.com/home), navigate to the [Account](https://nebulablock.com/profile) tab, and click \"Edit Profile\"."
+        }
+        ],
+        "model": "NebulaBlockDocsBot"
+    },
+    {
+        "id": "89",
+        "conversations": [
+        {
+            "from": "human",
+            "value": "What if I forget my password?"
+        },
+        {
+            "from": "gpt",
+            "value": "If you forget your password, you can reset it via the [reset password page](https://nebulablock.com/forgot)."
+        }
+        ],
+        "model": "NebulaBlockDocsBot"
+    },
+    {
+        "id": "90",
+        "conversations": [
+        {
+            "from": "human",
+            "value": "Is there a free trial or free credits available for new users?"
+        },
+        {
+            "from": "gpt",
+            "value": "Yes, new users receive a $1 free credit upon account creation. If you sign up with a referral code, you can receive an additional $9 bonus, totaling $10 in welcome credits."
+        }
+        ],
+        "model": "NebulaBlockDocsBot"
+    },
+    {
+        "id": "91",
+        "conversations": [
+        {
+            "from": "human",
+            "value": "Can I test models interactively on the platform's UI?"
+        },
+        {
+            "from": "gpt",
+            "value": "Yes, for Inference Models, you can test them interactively on the Nebula Block platform's UI. Simply log in, go to the 'Inference Models' tab, select your model, adjust parameters, and enter your input."
+        }
+        ],
+        "model": "NebulaBlockDocsBot"
+    },
+    {
+        "id": "92",
+        "conversations": [
+        {
+            "from": "human",
+            "value": "Are there any size limitations for files uploaded to Object Storage via the UI?"
+        },
+        {
+            "from": "gpt",
+            "value": "Yes, files uploaded via the UI must not exceed 50 MB. For larger files or entire folders, it is recommended to use `s3cmd` or an SDK."
+        }
+        ],
+        "model": "NebulaBlockDocsBot"
+    },
+    {
+        "id": "93",
+        "conversations": [
+        {
+            "from": "human",
+            "value": "What image formats are supported for image generation on Nebula Block?"
+        },
+        {
+            "from": "gpt",
+            "value": "Nebula Block supports JPG, JPEG, PNG, and WebP image formats for image generation."
+        }
+        ],
+        "model": "NebulaBlockDocsBot"
+    },
+    {
+        "id": "94",
+        "conversations": [
+        {
+            "from": "human",
+            "value": "What is `context_length` and `max_completion_tokens` in the model list API response?"
+        },
+        {
+            "from": "gpt",
+            "value": "`context_length` indicates the maximum length of the input context required by the model. `max_completion_tokens` is the maximum number of tokens that will be generated for each response, if applicable for that model."
+        }
+        ],
+        "model": "NebulaBlockDocsBot"
+    },
+    {
+        "id": "95",
+        "conversations": [
+        {
+            "from": "human",
+            "value": "How can I check if a GPU product is currently in stock?"
+        },
+        {
+            "from": "gpt",
+            "value": "When listing products via the Platform API (`GET {API_URL}/computing/products`), the `stock` attribute indicates the number of GPU products currently available. The `is_available` boolean also tells you if the product is available."
+        }
+        ],
+        "model": "NebulaBlockDocsBot"
+    },
+    {
+        "id": "96",
+        "conversations": [
+        {
+            "from": "human",
+            "value": "What is `ephemeral` disk size for GPU instances?"
+        },
+        {
+            "from": "gpt",
+            "value": "Ephemeral disk size refers to the temporary drive capacity attached to a virtual machine (VM) during its runtime. It's used for storing the active workload and its data. Its size is listed in gigabytes in the product details."
+        }
+        ],
+        "model": "NebulaBlockDocsBot"
+    },
+    {
+        "id": "97",
+        "conversations": [
+        {
+            "from": "human",
+            "value": "How long do Access Tokens last?"
+        },
+        {
+            "from": "gpt",
+            "value": "Access tokens obtained via the login endpoint expire after 2 hours. After expiration, you need to log in again to get a new access token for authentication."
+        }
+        ],
+        "model": "NebulaBlockDocsBot"
+    },
+    {
+        "id": "98",
+        "conversations": [
+        {
+            "from": "human",
+            "value": "What does a successful non-streaming text generation response look like in JSON?"
+        },
+        {
+            "from": "gpt",
+            "value": "A successful non-streaming text generation response will contain a `chat.completion` object, including `id`, `created`, `model`, `object`, `choices` (with `finish_reason`, `index`, `message` containing `content`, `role`), and `usage` (with `completion_tokens`, `prompt_tokens`, `total_tokens`). For example:\n\n```json\n{\n    \"id\": \"chatcmpl-ec0014bc38e2cad1e45d47f7f01f6569\",\n    \"created\": 1740432179,\n    \"model\": \"meta-llama/Llama-3.3-70B-Instruct\",\n    \"object\": \"chat.completion\",\n    \"choices\": [\n        {\n            \"finish_reason\": \"stop\",\n            \"index\": 0,\n            \"message\": {\n                \"content\": \"Yes! Montreal is the home of cutting edge ... research.\",\n                \"role\": \"assistant\"\n            }\n        }\n    ],\n    \"usage\": {\n        \"completion_tokens\": 695,\n        \"prompt_tokens\": 42,\n        \"total_tokens\": 737\n    }\n}\n```"
+        }
+        ],
+        "model": "NebulaBlockDocsBot"
+    },
+    {
+        "id": "99",
+        "conversations": [
+        {
+            "from": "human",
+            "value": "What does a streaming text generation response look like in JSON?"
+        },
+        {
+            "from": "gpt",
+            "value": "For streaming text generation (`stream: true`), the API returns several responses, each containing a `chat.completion.chunk` object. Each chunk contains a `delta` field with a portion of the generated `content`. The collection of these chunks forms the complete response. For example:\n\n```json\n{\n    \"id\": \"chatcmpl-289eb1f670a58c5cde47ddb634aad595\",\n    \"created\": 1740432271,\n    \"model\": \"meta-llama/Llama-3.3-70B-Instruct\",\n    \"object\": \"chat.completion.chunk\",\n    \"choices\": [\n        {\n            \"index\": 0,\n            \"delta\": {\n                \"content\": \" everyone\"\n            }\n        }\n    ]\n}\n```\n... (followed by more chunks until `[DONE]`)"
+        }
+        ],
+        "model": "NebulaBlockDocsBot"
+    },
+    {
+        "id": "100",
+        "conversations": [
+        {
+            "from": "human",
+            "value": "Can I rename an SSH key using the API?"
+        },
+        {
+            "from": "gpt",
+            "value": "Yes, you can rename an SSH key by sending a `PUT` request to `{API_URL}/ssh-keys/{id}`, where `{id}` is the SSH key's unique identifier. The request body should include the `key_name` parameter with the new name for the SSH key."
+        }
+        ],
+        "model": "NebulaBlockDocsBot"
+    },
+    {
+        "id": "101",
+        "conversations": [
+        {
+            "from": "human",
+            "value": "What are the key benefits of using GPU instances on Nebula Block?"
+        },
+        {
+            "from": "gpt",
+            "value": "Key benefits of GPU Instances include access to high-performance NVIDIA GPUs, ultra-low latency deployments in geographically optimized locations, secure access via SSH Key or Password Authentication, and high-speed networking for efficient data transfer with dedicated bandwidth."
+        }
+        ],
+        "model": "NebulaBlockDocsBot"
+    },
+    {
+        "id": "102",
+        "conversations": [
+        {
+            "from": "human",
+            "value": "What does 'Pay-As-You-Go' billing mean for Inference Models and GPU Instances?"
+        },
+        {
+            "from": "gpt",
+            "value": "For Inference Models, 'Pay-As-You-Go' means charges are based on token usage. For GPU Instances, it means billing is based on the selected hardware and the duration of use. You only pay for what you consume, updated hourly."
+        }
+        ],
+        "model": "NebulaBlockDocsBot"
+    },
+    {
+        "id": "103",
+        "conversations": [
+        {
+            "from": "human",
+            "value": "Are there any specific requirements for `image_id` and `product_id` when creating a GPU instance via API?"
+        },
+        {
+            "from": "gpt",
+            "value": "Yes, the `image_id` and `product_id` specified in the `Create GPU Instance` API request body must be from the same data center (`dc_id`) and region to ensure compatibility and successful deployment."
+        }
+        ],
+        "model": "NebulaBlockDocsBot"
+    },
+    {
+        "id": "104",
+        "conversations": [
+        {
+            "from": "human",
+            "value": "How do I list my SSH keys via the API, including pagination?"
+        },
+        {
+            "from": "gpt",
+            "value": "You can list your SSH keys by sending a `GET` request to `{API_URL}/ssh-keys`. You can use `limit` (defaults to 100) and `offset` (defaults to 0) query parameters for pagination. The response includes `total_ssh_keys` and an array of `ssh_keys` with details like `id`, `key_name`, `key_data`, and `create_time`."
+        }
+        ],
+        "model": "NebulaBlockDocsBot"
+    },
+    {
+    "id": "105",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "How do I obtain an access token programmatically for authentication using Python?"
+      },
+      {
+        "from": "gpt",
+        "value": "You can obtain an access token by sending a `POST` request to the `/login` endpoint with your username and password. Here's how you can do it using Python:\n\n```python\nimport requests\n\nAPI_URL = \"https://api.nebulablock.com/api/v1\" # Base URL for Platform API\n\nusername = \"testemail@gmail.com\"\npassword = \"123456789\"\n\nresponse = requests.post(f'{API_URL}/login', data={\n    \"username\": username,\n    \"password\": password\n})\n\nif response.json().get(\"status\") == \"success\":\n    access_token = response.json()[\"data\"][\"jwtToken\"]\n    print(f\"Access Token: {access_token}\")\nelse:\n    print(f\"Login failed: {response.json().get('message')}\")\n```"
+      }
+    ],
+    "model": "NebulaBlockDocsBot"
+  },
+  {
+    "id": "106",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "I need to create a new API key. Can you show me how to do this using a cURL command?"
+      },
+      {
+        "from": "gpt",
+        "value": "Yes, you can create an API key by sending a `POST` request to `{API_URL}/api_keys`. Remember to replace `{TOKEN/KEY}` with your authentication token or existing API key.\n\n```bash\ncurl -X POST 'https://api.nebulablock.com/api/v1/api_keys' \\\n-H 'Authorization: Bearer {TOKEN/KEY}' \\\n-H 'Content-Type: application/json' \\\n-d '{\n    \"name\": \"MyNewApiKey\",\n    \"description\": \"API key for my project\"\n}'\n```"
+      }
+    ],
+    "model": "NebulaBlockDocsBot"
+  },
+  {
+    "id": "107",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "How do I list all my existing API keys using Python?"
+      },
+      {
+        "from": "gpt",
+        "value": "To list all your API keys, make a `GET` request to the `/api_keys` endpoint. Ensure you replace `{YOUR_AUTH_TOKEN_OR_API_KEY}` with your valid token or API key.\n\n```python\nimport requests\nimport os\n\nAPI_URL = \"https://api.nebulablock.com/api/v1\"\nNEBULA_API_KEY = os.environ.get(\"NEBULA_API_KEY\") # Or your access token\n\nheaders = {\n    \"Authorization\": f\"Bearer {NEBULA_API_KEY}\"\n}\n\nresponse = requests.get(f'{API_URL}/api_keys', headers=headers)\n\nif response.json().get(\"status\") == \"success\":\n    for key in response.json().get(\"data\", []):\n        print(f\"ID: {key['id']}, Name: {key['name']}, Description: {key['description']}\")\nelse:\n    print(f\"Failed to list API keys: {response.json().get('message')}\")\n```"
+      }
+    ],
+    "model": "NebulaBlockDocsBot"
+  },
+  {
+    "id": "108",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "I want to delete an API key by its ID. Can you provide the cURL command for that?"
+      },
+      {
+        "from": "gpt",
+        "value": "Yes, to delete an API key, use a `DELETE` request to `{API_URL}/api_keys/{id}`. Remember to replace `{API_KEY_ID}` with the actual ID of the API key you want to delete and `{TOKEN/KEY}` with your authentication token or API key.\n\n```bash\ncurl -X DELETE 'https://api.nebulablock.com/api/v1/api_keys/{API_KEY_ID}' \\\n-H 'Authorization: Bearer {TOKEN/KEY}'\n```"
+      }
+    ],
+    "model": "NebulaBlockDocsBot"
+  },
+  {
+    "id": "109",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "How can I add a new SSH key to my Nebula Block account using a Python script?"
+      },
+      {
+        "from": "gpt",
+        "value": "You can add an SSH key by sending a `POST` request to `{API_URL}/ssh-keys`. Make sure to replace `{YOUR_AUTH_TOKEN_OR_API_KEY}` with your actual token or API key.\n\n```python\nimport requests\nimport os\n\nAPI_URL = \"https://api.nebulablock.com/api/v1\"\nNEBULA_API_KEY = os.environ.get(\"NEBULA_API_KEY\")\n\nheaders = {\n    \"Content-Type\": \"application/json\",\n    \"Authorization\": f\"Bearer {NEBULA_API_KEY}\"\n}\n\ndata = {\n    \"key_name\": \"MyLaptopKey\",\n    \"key_data\": \"ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQC...your_public_key_here...\"\n}\n\nresponse = requests.post(f'{API_URL}/ssh-keys', headers=headers, json=data)\n\nif response.json().get(\"status\") == \"success\":\n    print(f\"SSH key created successfully: {response.json()['data']['key_name']} (ID: {response.json()['data']['id']})\")\nelse:\n    print(f\"Failed to create SSH key: {response.json().get('message')}\")\n```"
+      }
+    ],
+    "model": "NebulaBlockDocsBot"
+  },
+  {
+    "id": "110",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "I need to retrieve a list of my SSH keys, and I want to limit the results. How can I do this with cURL?"
+      },
+      {
+        "from": "gpt",
+        "value": "You can use the `limit` query parameter to control the number of SSH keys returned. For example, to get 5 keys:\n\n```bash\ncurl -X GET 'https://api.nebulablock.com/api/v1/ssh-keys?limit=5' \\\n-H 'Authorization: Bearer {TOKEN/KEY}'\n```"
+      }
+    ],
+    "model": "NebulaBlockDocsBot"
+  },
+  {
+    "id": "111",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "How do I rename an existing SSH key using a Python script?"
+      },
+      {
+        "from": "gpt",
+        "value": "To rename an SSH key, send a `PUT` request to `{API_URL}/ssh-keys/{id}` with the new `key_name` in the request body. Replace `{SSH_KEY_ID}` with the actual ID of the key.\n\n```python\nimport requests\nimport os\n\nAPI_URL = \"https://api.nebulablock.com/api/v1\"\nNEBULA_API_KEY = os.environ.get(\"NEBULA_API_KEY\")\nSSH_KEY_ID_TO_RENAME = 76 # Replace with the actual SSH key ID\n\nheaders = {\n    \"Content-Type\": \"application/json\",\n    \"Authorization\": f\"Bearer {NEBULA_API_KEY}\"\n}\n\ndata = {\n    \"key_name\": \"UpdatedSSHKeyName\"\n}\n\nresponse = requests.put(f'{API_URL}/ssh-keys/{SSH_KEY_ID_TO_RENAME}', headers=headers, json=data)\n\nif response.json().get(\"status\") == \"success\":\n    print(f\"SSH key renamed successfully to: {response.json()['data']['key_name']}\")\nelse:\n    print(f\"Failed to rename SSH key: {response.json().get('message')}\")\n```"
+      }
+    ],
+    "model": "NebulaBlockDocsBot"
+  },
+  {
+    "id": "112",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "How can I delete a specific SSH key using its ID via a cURL command?"
+      },
+      {
+        "from": "gpt",
+        "value": "To delete an SSH key, use a `DELETE` request to `{API_URL}/ssh-keys/{id}`. Replace `{SSH_KEY_ID}` with the ID of the key to delete and `{TOKEN/KEY}` with your authentication token or API key.\n\n```bash\ncurl -X DELETE 'https://api.nebulablock.com/api/v1/ssh-keys/{SSH_KEY_ID}' \\\n-H 'Authorization: Bearer {TOKEN/KEY}'\n```"
+      }
+    ],
+    "model": "NebulaBlockDocsBot"
+  },
+  {
+    "id": "113",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "Show me how to list all available operating system images using Python."
+      },
+      {
+        "from": "gpt",
+        "value": "You can list OS images by sending a `GET` request to `{API_URL}/computing/images`. This will return images grouped by region.\n\n```python\nimport requests\nimport os\n\nAPI_URL = \"https://api.nebulablock.com/api/v1\"\nNEBULA_API_KEY = os.environ.get(\"NEBULA_API_KEY\")\n\nheaders = {\n    \"Authorization\": f\"Bearer {NEBULA_API_KEY}\",\n    \"Content-Type\": \"application/json\"\n}\n\nresponse = requests.get(f'{API_URL}/computing/images', headers=headers)\n\nif response.json().get(\"status\") == \"success\":\n    images_by_region = response.json().get(\"data\", {})\n    for region, images in images_by_region.items():\n        print(f\"\\nRegion: {region}\")\n        for img in images:\n            print(f\"  - OS Name: {img['os_name']}, ID: {img['id']}\")\nelse:\n    print(f\"Failed to retrieve images: {response.json().get('message')}\")\n```"
+      }
+    ],
+    "model": "NebulaBlockDocsBot"
+  },
+  {
+    "id": "114",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "How do I retrieve a list of available GPU products with cURL?"
+      },
+      {
+        "from": "gpt",
+        "value": "You can get a list of GPU products by making a `GET` request to `{API_URL}/computing/products`. This will show available hardware configurations like GPU type, CPU, RAM, and pricing.\n\n```bash\ncurl -X GET 'https://api.nebulablock.com/api/v1/computing/products' \\\n-H 'Authorization: Bearer {TOKEN/KEY}' \\\n-H 'Content-Type: application/json'\n```"
+      }
+    ],
+    "model": "NebulaBlockDocsBot"
+  },
+  {
+    "id": "115",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "I want to deploy a new GPU instance. Can you give me a Python example for that API call?"
+      },
+      {
+        "from": "gpt",
+        "value": "To create a GPU instance, you'll send a `POST` request to `{API_URL}/computing/instance` with the required parameters: `instance_name`, `product_id`, `image_id`, and `ssh_key_id`.\n\n```python\nimport requests\nimport os\n\nAPI_URL = \"https://api.nebulablock.com/api/v1\"\nNEBULA_API_KEY = os.environ.get(\"NEBULA_API_KEY\")\n\nheaders = {\n    \"Content-Type\": \"application/json\",\n    \"Authorization\": f\"Bearer {NEBULA_API_KEY}\"\n}\n\ndata = {\n    \"instance_name\": \"my-gpu-instance-01\",\n    \"product_id\": \"fcp66d566c43a9501001256\", # Example H100 in CANADA\n    \"image_id\": \"fcp66d566c93a95010012\", # Example Ubuntu 22.04 in CANADA\n    \"ssh_key_id\": 2 # Replace with your SSH key ID\n}\n\nresponse = requests.post(f'{API_URL}/computing/instance', headers=headers, json=data)\n\nif response.json().get(\"status\") == \"success\":\n    print(f\"GPU instance created successfully: {response.json().get('message')}\")\nelse:\n    print(f\"Failed to create GPU instance: {response.json().get('message')}\")\n```"
+      }
+    ],
+    "model": "NebulaBlockDocsBot"
+  },
+  {
+    "id": "116",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "How do I list my active GPU instances using cURL with pagination?"
+      },
+      {
+        "from": "gpt",
+        "value": "You can list your active GPU instances using a `GET` request to `{API_URL}/computing/instances` and specify `limit` and `offset` for pagination. For example, to get 2 instances starting from the second one (offset 1):\n\n```bash\ncurl -X GET 'https://api.nebulablock.com/api/v1/computing/instances?limit=2&offset=1' \\\n-H 'Authorization: Bearer {TOKEN/KEY}' \\\n-H 'Content-Type: application/json'\n```"
+      }
+    ],
+    "model": "NebulaBlockDocsBot"
+  },
+  {
+    "id": "117",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "How can I get the detailed information of a specific GPU instance via Python?"
+      },
+      {
+        "from": "gpt",
+        "value": "To get detailed information about a GPU instance, send a `GET` request to `{API_URL}/computing/instance/{id}`. Replace `{INSTANCE_ID}` with the actual ID of your instance.\n\n```python\nimport requests\nimport os\n\nAPI_URL = \"https://api.nebulablock.com/api/v1\"\nNEBULA_API_KEY = os.environ.get(\"NEBULA_API_KEY\")\nINSTANCE_ID = \"102cade84ea-e703-4400-b77d-8ed545d198ee\" # Replace with your instance ID\n\nheaders = {\n    \"Authorization\": f\"Bearer {NEBULA_API_KEY}\",\n    \"Content-Type\": \"application/json\"\n}\n\nresponse = requests.get(f'{API_URL}/computing/instance/{INSTANCE_ID}', headers=headers)\n\nif response.json().get(\"status\") == \"success\":\n    instance_detail = response.json().get(\"data\", {})[0] # Assuming only one instance detail is returned\n    print(f\"Instance Name: {instance_detail['host_name']}\")\n    print(f\"Status: {instance_detail['status']}\")\n    print(f\"Public IP: {instance_detail['public_ipv4']}\")\n    print(f\"GPU Type: {instance_detail['gpu_type']}\")\nelse:\n    print(f\"Failed to retrieve instance detail: {response.json().get('message')}\")\n```"
+      }
+    ],
+    "model": "NebulaBlockDocsBot"
+  },
+  {
+    "id": "118",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "How do I stop a running GPU instance using cURL?"
+      },
+      {
+        "from": "gpt",
+        "value": "To stop a GPU instance, send a `GET` request to the specific instance's stop endpoint: `{API_URL}/computing/instance/{id}/stop`. Remember to replace `{INSTANCE_ID}` with your instance's unique ID.\n\n```bash\ncurl -X GET 'https://api.nebulablock.com/api/v1/computing/instance/{INSTANCE_ID}/stop' \\\n-H 'Authorization: Bearer {TOKEN/KEY}' \\\n-H 'Content-Type: application/json'\n```"
+      }
+    ],
+    "model": "NebulaBlockDocsBot"
+  },
+  {
+    "id": "119",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "Can I start a stopped GPU instance using a Python script?"
+      },
+      {
+        "from": "gpt",
+        "value": "Yes, you can start a stopped GPU instance by making a `GET` request to its dedicated start endpoint: `{API_URL}/computing/instance/{id}/start`.\n\n```python\nimport requests\nimport os\n\nAPI_URL = \"https://api.nebulablock.com/api/v1\"\nNEBULA_API_KEY = os.environ.get(\"NEBULA_API_KEY\")\nINSTANCE_ID = \"your_instance_id\" # Replace with the ID of the instance you want to start\n\nheaders = {\n    \"Authorization\": f\"Bearer {NEBULA_API_KEY}\",\n    \"Content-Type\": \"application/json\"\n}\n\nresponse = requests.get(f'{API_URL}/computing/instance/{INSTANCE_ID}/start', headers=headers)\n\nif response.json().get(\"status\") == \"success\":\n    print(f\"Instance started successfully: {response.json().get('message')}\")\nelse:\n    print(f\"Failed to start instance: {response.json().get('message')}\")\n```"
+      }
+    ],
+    "model": "NebulaBlockDocsBot"
+  },
+  {
+    "id": "120",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "How do I list my current credit balance using a cURL command?"
+      },
+      {
+        "from": "gpt",
+        "value": "You can retrieve your account's current credit balance by sending a `GET` request to `{API_URL}/users/credits`.\n\n```bash\ncurl -X GET 'https://api.nebulablock.com/api/v1/users/credits' \\\n-H 'Authorization: Bearer {TOKEN/KEY}'\n```"
+      }
+    ],
+    "model": "NebulaBlockDocsBot"
+  },
+  {
+    "id": "121",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "Can I get a list of my invoices with Python, and paginate the results?"
+      },
+      {
+        "from": "gpt",
+        "value": "Yes, you can list invoices and paginate them using `limit` and `offset` query parameters in a `GET` request to `{API_URL}/users/invoices`.\n\n```python\nimport requests\nimport os\n\nAPI_URL = \"https://api.nebulablock.com/api/v1\"\nNEBULA_API_KEY = os.environ.get(\"NEBULA_API_KEY\")\n\nheaders = {\n    \"Authorization\": f\"Bearer {NEBULA_API_KEY}\"\n}\n\n# Example: Get the first 3 invoices\nlimit = 3\noffset = 0\n\nresponse = requests.get(f'{API_URL}/users/invoices?limit={limit}&offset={offset}', headers=headers)\n\nif response.json().get(\"status\") == \"success\":\n    invoices = response.json().get(\"data\", {}).get(\"invoices\", [])\n    total = response.json().get(\"data\", {}).get(\"total_invoices\", 0)\n    print(f\"Total invoices: {total}\")\n    for invoice in invoices:\n        print(f\"Invoice ID: {invoice['invoice_id']}, Price: ${invoice['price']:.2f}, Type: {invoice['type']}\")\nelse:\n    print(f\"Failed to retrieve invoices: {response.json().get('message')}\")\n```"
+      }
+    ],
+    "model": "NebulaBlockDocsBot"
+  },
+  {
+    "id": "122",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "How do I download a specific invoice PDF using cURL?"
+      },
+      {
+        "from": "gpt",
+        "value": "You can download an invoice PDF by making a `GET` request to `{API_URL}/users/invoice-download/{invoice_id}`. Replace `{INVOICE_ID}` with the ID of the invoice you want to download. The file will be streamed directly.\n\n```bash\ncurl -X GET 'https://api.nebulablock.com/api/v1/users/invoice-download/{INVOICE_ID}' \\\n-H 'Authorization: Bearer {TOKEN/KEY}' \\\n-o invoice_{INVOICE_ID}.pdf\n```"
+      }
+    ],
+    "model": "NebulaBlockDocsBot"
+  },
+  {
+    "id": "123",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "How can I check my payment transaction history using Python, with pagination?"
+      },
+      {
+        "from": "gpt",
+        "value": "To get your payment history, send a `GET` request to `{API_URL}/users/credits/history`. You can use `limit` and `offset` for pagination.\n\n```python\nimport requests\nimport os\n\nAPI_URL = \"https://api.nebulablock.com/api/v1\"\nNEBULA_API_KEY = os.environ.get(\"NEBULA_API_KEY\")\n\nheaders = {\n    \"Authorization\": f\"Bearer {NEBULA_API_KEY}\"\n}\n\n# Example: Get the most recent 2 transactions\nlimit = 2\noffset = 0\n\nresponse = requests.get(f'{API_URL}/users/credits/history?limit={limit}&offset={offset}', headers=headers)\n\nif response.json().get(\"status\") == \"success\":\n    history = response.json().get(\"data\", {}).get(\"credit_history\", [])\n    total_histories = response.json().get(\"data\", {}).get(\"total_credit_histories\", 0)\n    print(f\"Total credit histories: {total_histories}\")\n    for record in history:\n        print(f\"Date: {record['create_time']}, Compute: ${record['computing_amount']:.2f}, Serverless: ${record['serverless_amount']:.2f}, Total: ${record['total']:.2f}\")\nelse:\n    print(f\"Failed to retrieve credit history: {response.json().get('message')}\")\n```"
+      }
+    ],
+    "model": "NebulaBlockDocsBot"
+  },
+  {
+    "id": "124",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "How do I list all available Inference Models using a cURL command?"
+      },
+      {
+        "from": "gpt",
+        "value": "You can retrieve a list of all available inference models by sending a `GET` request to `{API_URL}/serverless/models` (Note: the `API_URL` here refers to the Inference API base URL: `https://inference.nebulablock.com/v1`).\n\n```bash\ncurl -X GET 'https://inference.nebulablock.com/v1/serverless/models' \\\n-H 'Authorization: Bearer {TOKEN/KEY}' \\\n-H 'Content-Type: application/json'\n```"
+      }
+    ],
+    "model": "NebulaBlockDocsBot"
+  },
+  {
+    "id": "125",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "Can I generate text in a non-streaming fashion using Python, for example with Llama3.3-70B?"
+      },
+      {
+        "from": "gpt",
+        "value": "Yes, you can generate text without streaming by setting `stream` to `False` in your `POST` request to `{API_URL}/chat/completions` (Inference API URL). \n\n```python\nimport requests\nimport os\n\nINFERENCE_API_URL = \"https://inference.nebulablock.com/v1\"\nNEBULA_API_KEY = os.environ.get(\"NEBULA_API_KEY\")\n\nheaders = {\n    \"Content-Type\": \"application/json\",\n    \"Authorization\": f\"Bearer {NEBULA_API_KEY}\"\n}\n\ndata = {\n    \"messages\": [\n        {\"role\": \"user\", \"content\": \"What is the capital of France?\"}\n    ],\n    \"model\": \"meta-llama/Llama-3.3-70B-Instruct\",\n    \"max_tokens\": 50,\n    \"temperature\": 0.7,\n    \"top_p\": 0.9,\n    \"stream\": False # Set to False for non-streaming\n}\n\nresponse = requests.post(f'{INFERENCE_API_URL}/chat/completions', headers=headers, json=data)\n\nif response.status_code == 200:\n    print(response.json()['choices'][0]['message']['content'])\nelse:\n    print(f\"Error: {response.status_code} - {response.text}\")\n```"
+      }
+    ],
+    "model": "NebulaBlockDocsBot"
+  },
+  {
+    "id": "126",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "How do I generate text with streaming output using cURL?"
+      },
+      {
+        "from": "gpt",
+        "value": "To enable streaming output, set the `stream` parameter to `true` in your `POST` request to `{API_URL}/chat/completions` (Inference API URL). The response will be received in chunks.\n\n```bash\ncurl -X POST 'https://inference.nebulablock.com/v1/chat/completions' \\\n    -H 'Content-Type: application/json' \\\n    -H 'Authorization: Bearer $NEBULA_API_KEY' \\\n    --data-raw '{\n        \"messages\": [\n            {\"role\":\"user\",\"content\":\"Tell me a short story about a brave knight.\"}\n        ],\n        \"model\": \"meta-llama/Llama-3.3-70B-Instruct\",\n        \"max_tokens\": 200,\n        \"temperature\": 1,\n        \"top_p\": 0.9,\n        \"stream\": true\n    }'\n```"
+      }
+    ],
+    "model": "NebulaBlockDocsBot"
+  },
+  {
+    "id": "127",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "How do I use the Text Generation (Vision) model (Qwen2.5-VL-7B-Instruct) with an image URL and text prompt via cURL?"
+      },
+      {
+        "from": "gpt",
+        "value": "You can send both an image URL and a text prompt by structuring the `content` field in your `messages` array as a list of objects. Each object specifies its `type` (image_url or text).\n\n```bash\ncurl -X POST \"https://inference.nebulablock.com/v1/chat/completions\" \\\n    -H \"Content-Type: application/json\" \\\n    -H \"Authorization: Bearer $NEBULA_API_KEY\" \\\n    --data-raw '{\n        \"messages\": [\n\t\t\t{\"role\":\"user\",\"content\":[\n\t\t\t{\"type\":\"image_url\",\"image_url\":\n\t\t\t{\"url\":\"https://qianwen-res.oss-cn-beijing.aliyuncs.com/Qwen-VL/assets/demo.jpeg\"}},\n\t\t\t{\"type\":\"text\",\"text\":\"Describe this image in detail.\"}\n\t\t]}],\n        \"model\": \"Qwen/Qwen2.5-VL-7B-Instruct\",\n        \"max_tokens\": 150,\n        \"temperature\": 0.7,\n        \"top_p\": 0.9,\n        \"stream\": false\n    }'\n```"
+      }
+    ],
+    "model": "NebulaBlockDocsBot"
+  },
+  {
+    "id": "128",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "Can you provide a Python example for generating an image from text using the StableDiffusion XL 1.0 model?"
+      },
+      {
+        "from": "gpt",
+        "value": "Yes, for text-to-image generation, you'll use the Platform API's `/images/generation` endpoint. You specify the model and a `prompt`.\n\n```python\nimport requests\nimport os\n\nPLATFORM_API_URL = \"https://api.nebulablock.com/api/v1\"\nNEBULA_API_KEY = os.environ.get(\"NEBULA_API_KEY\")\n\nheaders = {\n    \"Content-Type\": \"application/json\",\n    \"Authorization\": f\"Bearer {NEBULA_API_KEY}\"\n}\n\ndata = {\n    \"model\": \"stabilityai/stable-diffusion-xl-base-1.0\",\n    \"prompt\": \"a cyberpunk city at night with flying cars, highly detailed, neon lights\",\n    \"num_steps\": 30,\n    \"guidance_scale\": 7,\n    \"width\": 1024,\n    \"height\": 1024,\n    \"negative_prompt\": \"blurry, low quality, distorted\"\n}\n\nresponse = requests.post(f'{PLATFORM_API_URL}/images/generation', headers=headers, json=data)\n\nif response.status_code == 200:\n    # The response contains base64 encoded image data\n    image_data = response.json()['data'][0]['b64_json']\n    print(f\"Image generated successfully! Base64 data (first 50 chars): {image_data[:50]}...\")\n    # You would typically decode this base64 string to an image file\nelse:\n    print(f\"Error: {response.status_code} - {response.text}\")\n```"
+      }
+    ],
+    "model": "NebulaBlockDocsBot"
+  },
+  {
+    "id": "129",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "How do I generate embeddings for multiple sentences using the BGE Large EN v1.5 model with a cURL command?"
+      },
+      {
+        "from": "gpt",
+        "value": "You can send a `POST` request to `{API_URL}/embeddings` (Inference API URL) with the model name and a list of strings under the `input` field. Each string in the `input` list will have a corresponding embedding generated.\n\n```bash\ncurl -X POST \"https://inference.nebulablock.com/v1/embeddings\" \\\n    -H \"Content-Type: application/json\" \\\n    -H \"Authorization: Bearer $NEBULA_API_KEY\" \\\n    --data-raw '{\n      \"model\":\"BAAI/bge-large-en-v1.5\",\n      \"input\":[\n            \"The quick brown fox jumps over the lazy dog.\",\n            \"Artificial intelligence is transforming industries globally.\",\n            \"Embeddings represent data in a dense vector space.\"\n        ]\n    }'\n```"
+      }
+    ],
+    "model": "NebulaBlockDocsBot"
+  },
+  {
+    "id": "130",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "I need to get my Python script to call the login endpoint. Can you show me the basics?"
+      },
+      {
+        "from": "gpt",
+        "value": "Sure, here's a basic Python script to call the `/login` endpoint. Remember to handle sensitive information like username and password securely, for example using environment variables.\n\n```python\nimport requests\nimport os\n\nAPI_URL = \"https://api.nebulablock.com/api/v1\"\n\n# It's better to get these from environment variables or a secure configuration\nUSERNAME = os.environ.get(\"NEBULA_USERNAME\")\nPASSWORD = os.environ.get(\"NEBULA_PASSWORD\")\n\nresponse = requests.post(f'{API_URL}/login', json={\n    \"username\": USERNAME,\n    \"password\": PASSWORD\n})\n\nif response.status_code == 200 and response.json().get(\"status\") == \"success\":\n    jwt_token = response.json()[\"data\"][\"jwtToken\"]\n    print(f\"Successfully logged in. JWT Token: {jwt_token[:20]}...\")\nelse:\n    print(f\"Login failed: {response.json().get('message')}\")\n```"
+      }
+    ],
+    "model": "NebulaBlockDocsBot"
+  },
+  {
+    "id": "131",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "Can you show me how to create an API key using a Python script, and capture the full key?"
+      },
+      {
+        "from": "gpt",
+        "value": "To create an API key in Python, you'll make a `POST` request. The full key is returned in the `key` field of the response, so capture it immediately as it's only shown once.\n\n```python\nimport requests\nimport os\n\nAPI_URL = \"https://api.nebulablock.com/api/v1\"\nNEBULA_AUTH_TOKEN = os.environ.get(\"NEBULA_AUTH_TOKEN\") # Use an existing access token or API key\n\nheaders = {\n    \"Content-Type\": \"application/json\",\n    \"Authorization\": f\"Bearer {NEBULA_AUTH_TOKEN}\"\n}\n\ndata = {\n    \"name\": \"MyPythonGeneratedKey\",\n    \"description\": \"API key created via Python script\"\n}\n\nresponse = requests.post(f'{API_URL}/api_keys', headers=headers, json=data)\n\nif response.json().get(\"status\") == \"success\":\n    api_key_data = response.json()[\"data\"]\n    print(f\"API Key created successfully! ID: {api_key_data['id']}, Name: {api_key_data['name']}\")\n    print(f\"*** IMPORTANT: Your new API Key is: {api_key_data['key']} ***\\n(Save this key, it will not be shown again)\")\nelse:\n    print(f\"Failed to create API key: {response.json().get('message')}\")\n```"
+      }
+    ],
+    "model": "NebulaBlockDocsBot"
+  },
+  {
+    "id": "132",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "How do I list SSH keys with an `offset` using cURL?"
+      },
+      {
+        "from": "gpt",
+        "value": "You can combine `limit` and `offset` to retrieve specific pages of results. For example, to get 3 SSH keys, skipping the first 2:\n\n```bash\ncurl -X GET 'https://api.nebulablock.com/api/v1/ssh-keys?limit=3&offset=2' \\\n-H 'Authorization: Bearer {TOKEN/KEY}'\n```"
+      }
+    ],
+    "model": "NebulaBlockDocsBot"
+  },
+  {
+    "id": "133",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "How do I list all active GPU instances using a Python script, including their public IP and status?"
+      },
+      {
+        "from": "gpt",
+        "value": "You can retrieve active GPU instances by sending a `GET` request to `/computing/instances`. The response contains detailed information about each instance.\n\n```python\nimport requests\nimport os\n\nAPI_URL = \"https://api.nebulablock.com/api/v1\"\nNEBULA_API_KEY = os.environ.get(\"NEBULA_API_KEY\")\n\nheaders = {\n    \"Authorization\": f\"Bearer {NEBULA_API_KEY}\",\n    \"Content-Type\": \"application/json\"\n}\n\nresponse = requests.get(f'{API_URL}/computing/instances', headers=headers)\n\nif response.json().get(\"status\") == \"success\":\n    instances = response.json().get(\"data\", [])\n    if instances:\n        print(\"Your Active GPU Instances:\")\n        for instance in instances:\n            print(f\"  - Name: {instance['host_name']}, ID: {instance['id']}\")\n            print(f\"    Region: {instance['region']}, Status: {instance['status']}\")\n            print(f\"    Public IP: {instance['public_ipv4']}, GPU Type: {instance['gpu_type']}\")\n    else:\n        print(\"No active GPU instances found.\")\nelse:\n    print(f\"Failed to list instances: {response.json().get('message')}\")\n```"
+      }
+    ],
+    "model": "NebulaBlockDocsBot"
+  },
+  {
+    "id": "134",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "I want to reboot a GPU instance using a cURL command. How do I do that?"
+      },
+      {
+        "from": "gpt",
+        "value": "To reboot a GPU instance, send a `GET` request to its specific reboot endpoint: `{API_URL}/computing/instance/{id}/reboot`. Remember to replace `{INSTANCE_ID}` with your instance's unique ID.\n\n```bash\ncurl -X GET 'https://api.nebulablock.com/api/v1/computing/instance/{INSTANCE_ID}/reboot' \\\n-H 'Authorization: Bearer {TOKEN/KEY}' \\\n-H 'Content-Type: application/json'\n```"
+      }
+    ],
+    "model": "NebulaBlockDocsBot"
+  },
+  {
+    "id": "135",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "How can I programmatically delete a GPU instance with Python?"
+      },
+      {
+        "from": "gpt",
+        "value": "To delete a GPU instance, you will make a `DELETE` request to `{API_URL}/computing/instance/{id}`. Be careful, as this action is permanent.\n\n```python\nimport requests\nimport os\n\nAPI_URL = \"https://api.nebulablock.com/api/v1\"\nNEBULA_API_KEY = os.environ.get(\"NEBULA_API_KEY\")\nINSTANCE_ID_TO_DELETE = \"your_instance_id_here\" # Replace with the actual instance ID\n\nheaders = {\n    \"Authorization\": f\"Bearer {NEBULA_API_KEY}\"\n}\n\nresponse = requests.delete(f'{API_URL}/computing/instance/{INSTANCE_ID_TO_DELETE}', headers=headers)\n\nif response.json().get(\"status\") == \"success\":\n    print(f\"GPU instance {INSTANCE_ID_TO_DELETE} deleted successfully.\")\nelse:\n    print(f\"Failed to delete GPU instance: {response.json().get('message')}\")\n```"
+      }
+    ],
+    "model": "NebulaBlockDocsBot"
+  },
+  {
+    "id": "136",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "How do I list my deleted GPU instances using cURL?"
+      },
+      {
+        "from": "gpt",
+        "value": "You can view your deleted instances by sending a `GET` request to `{API_URL}/computing/deleted-instances`. Pagination parameters `limit` and `offset` are also supported.\n\n```bash\ncurl -X GET 'https://api.nebulablock.com/api/v1/computing/deleted-instances' \\\n-H 'Authorization: Bearer {TOKEN/KEY}' \\\n-H 'Content-Type: application/json'\n```"
+      }
+    ],
+    "model": "NebulaBlockDocsBot"
+  },
+  {
+    "id": "137",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "How can I generate text using a system prompt with Python?"
+      },
+      {
+        "from": "gpt",
+        "value": "To include a system prompt, add a message object with `role: \"system\"` before the user message in the `messages` array.\n\n```python\nimport requests\nimport os\n\nINFERENCE_API_URL = \"https://inference.nebulablock.com/v1\"\nNEBULA_API_KEY = os.environ.get(\"NEBULA_API_KEY\")\n\nheaders = {\n    \"Content-Type\": \"application/json\",\n    \"Authorization\": f\"Bearer {NEBULA_API_KEY}\"\n}\n\ndata = {\n    \"messages\": [\n        {\"role\": \"system\", \"content\": \"You are a helpful assistant that provides concise answers.\"},\n        {\"role\": \"user\", \"content\": \"Explain quantum entanglement briefly.\"}\n    ],\n    \"model\": \"DeepSeek-V3-0324\", # Using model alias for clarity\n    \"max_tokens\": 100,\n    \"temperature\": 0.5,\n    \"top_p\": 0.9,\n    \"stream\": False\n}\n\nresponse = requests.post(f'{INFERENCE_API_URL}/chat/completions', headers=headers, json=data)\n\nif response.status_code == 200:\n    print(response.json()['choices'][0]['message']['content'])\nelse:\n    print(f\"Error: {response.status_code} - {response.text}\")\n```"
+      }
+    ],
+    "model": "NebulaBlockDocsBot"
+  },
+  {
+    "id": "138",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "Show me a cURL example for generating an image with `negative_prompt` using StableDiffusion XL 1.0."
+      },
+      {
+        "from": "gpt",
+        "value": "You can specify a `negative_prompt` to guide the model away from generating certain content. This helps in refining image quality.\n\n```bash\ncurl -X POST 'https://api.nebulablock.com/api/v1/images/generation' \\\n    -H 'Content-Type: application/json' \\\n    -H 'Authorization: Bearer $NEBULA_API_KEY' \\\n    --data-raw '{\n      \"model\":\"stabilityai/stable-diffusion-xl-base-1.0\",\n      \"prompt\":\"a fantastical forest with glowing mushrooms\",\n      \"num_steps\":25,\n      \"guidance_scale\":9,\n      \"negative_prompt\":\"dark, sad, blurry, ugly, deformed\",\n      \"width\":768,\n      \"height\":768\n    }'\n```"
+      }
+    ],
+    "model": "NebulaBlockDocsBot"
+  },
+  {
+    "id": "139",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "How do I generate an image using the Image-to-Image model (Flux.1 Fill Dev) with a base64 encoded input image and mask image via Python?"
+      },
+      {
+        "from": "gpt",
+        "value": "For image-to-image generation with Flux.1 Fill Dev, you'll need to provide `image` and `mask` parameters as base64 encoded strings in your `POST` request. Ensure the mask dimensions match the image dimensions for best results.\n\n```python\nimport requests\nimport os\nimport base64\n\nPLATFORM_API_URL = \"https://api.nebulablock.com/api/v1\"\nNEBULA_API_KEY = os.environ.get(\"NEBULA_API_KEY\")\n\n# --- Example: Replace with your actual base64 image/mask data ---\n# In a real scenario, you would read these from files and base64 encode them\ndef encode_image_to_base64(image_path):\n    with open(image_path, \"rb\") as image_file:\n        return base64.b64encode(image_file.read()).decode('utf-8')\n\n# Example usage (replace with actual paths and ensure images are small for demo)\n# base64_input_image = encode_image_to_base64(\"path/to/your/input_image.png\")\n# base64_mask_image = encode_image_to_base64(\"path/to/your/mask_image.png\")\n\n# Placeholder base64 data for demonstration (very short, invalid for actual use)\nbase64_input_image = \"/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAYEBAU.../Z\"\nbase64_mask_image = \"/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAYEBAU.../9k=\"\n# -------------------------------------------------------------------\n\nheaders = {\n    \"Content-Type\": \"application/json\",\n    \"Authorization\": f\"Bearer {NEBULA_API_KEY}\"\n}\n\ndata = {\n    \"model\": \"black-forest-labs/FLUX.1-Fill-dev\",\n    \"prompt\": \"a red baseball cap\",\n    \"num_steps\": 40,\n    \"guidance_scale\": 4.5,\n    \"width\": 512, # Adjust if your actual image is different\n    \"height\": 512, # Adjust if your actual image is different\n    \"image\": base64_input_image,\n    \"mask\": base64_mask_image\n}\n\nresponse = requests.post(f'{PLATFORM_API_URL}/images/generation', headers=headers, json=data)\n\nif response.status_code == 200:\n    generated_image_b64 = response.json()['data'][0]['b64_json']\n    print(f\"Image-to-Image generated successfully! Base64 result (first 50 chars): {generated_image_b64[:50]}...\")\nelse:\n    print(f\"Error: {response.status_code} - {response.text}\")\n```"
+      }
+    ],
+    "model": "NebulaBlockDocsBot"
+  },
+  {
+    "id": "140",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "How do I generate text embeddings using a Python script for a single sentence?"
+      },
+      {
+        "from": "gpt",
+        "value": "You can generate embeddings for a single sentence by passing a list with one string to the `input` parameter in your `POST` request to `{API_URL}/embeddings` (Inference API URL).\n\n```python\nimport requests\nimport os\n\nINFERENCE_API_URL = \"https://inference.nebulablock.com/v1\"\nNEBULA_API_KEY = os.environ.get(\"NEBULA_API_KEY\")\n\nheaders = {\n    \"Content-Type\": \"application/json\",\n    \"Authorization\": f\"Bearer {NEBULA_API_KEY}\"\n}\n\ndata = {\n    \"model\": \"WhereIsAI/UAE-Large-V1\",\n    \"input\": [\n        \"This is a single sentence for embedding.\"\n    ]\n}\n\nresponse = requests.post(f'{INFERENCE_API_URL}/embeddings', headers=headers, json=data)\n\nif response.status_code == 200:\n    embedding = response.json()['data'][0]['embedding']\n    print(f\"Generated embedding (first 10 values): {embedding[:10]}...\")\n    print(f\"Embedding dimension: {len(embedding)}\")\nelse:\n    print(f\"Error: {response.status_code} - {response.text}\")\n```"
+      }
+    ],
+    "model": "NebulaBlockDocsBot"
+  },
+  {
+    "id": "141",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "What is the HTTP method and endpoint for listing all products (GPU instance configurations)?"
+      },
+      {
+        "from": "gpt",
+        "value": "The HTTP method is `GET` and the endpoint is `{API_URL}/computing/products` (Platform API). This endpoint returns a structured JSON object containing available GPU configurations grouped by region and GPU type."
+      }
+    ],
+    "model": "NebulaBlockDocsBot"
+  },
+  {
+    "id": "142",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "How do I specify the `temperature` and `top_p` parameters for text generation using cURL?"
+      },
+      {
+        "from": "gpt",
+        "value": "You include `temperature` and `top_p` directly in the JSON body of your `POST` request to the `/chat/completions` endpoint. `temperature` controls randomness, and `top_p` controls diversity.\n\n```bash\ncurl -X POST 'https://inference.nebulablock.com/v1/chat/completions' \\\n    -H 'Content-Type: application/json' \\\n    -H 'Authorization: Bearer $NEBULA_API_KEY' \\\n    --data-raw '{\n        \"messages\": [\n            {\"role\":\"user\",\"content\":\"Write a haiku about the ocean.\"}\n        ],\n        \"model\": \"DeepSeek-R1-Distill-Llama-70B\",\n        \"max_tokens\": 50,\n        \"temperature\": 0.8, \\\n        \"top_p\": 0.7, \\\n        \"stream\": false\n    }'\n```"
+      }
+    ],
+    "model": "NebulaBlockDocsBot"
+  },
+  {
+    "id": "143",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "Can I check my current credit balance using the `requests` library in Python?"
+      },
+      {
+        "from": "gpt",
+        "value": "Yes, you can check your current credit balance with a simple `GET` request to `{API_URL}/users/credits`.\n\n```python\nimport requests\nimport os\n\nPLATFORM_API_URL = \"https://api.nebulablock.com/api/v1\"\nNEBULA_API_KEY = os.environ.get(\"NEBULA_API_KEY\")\n\nheaders = {\n    \"Authorization\": f\"Bearer {NEBULA_API_KEY}\"\n}\n\nresponse = requests.get(f'{PLATFORM_API_URL}/users/credits', headers=headers)\n\nif response.json().get(\"status\") == \"success\":\n    balance = response.json()[\"data\"][\"available_balance\"]\n    print(f\"Your current credit balance: ${float(balance):.4f}\")\nelse:\n    print(f\"Failed to retrieve credit balance: {response.json().get('message')}\")\n```"
+      }
+    ],
+    "model": "NebulaBlockDocsBot"
+  },
+  {
+    "id": "144",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "What's the difference in the `API_URL` for Platform API vs. Inference API when using cURL?"
+      },
+      {
+        "from": "gpt",
+        "value": "The Platform API uses `https://api.nebulablock.com/api/v1` as its `API_URL`, while the Inference API (OpenAI Compatible) uses `https://inference.nebulablock.com/v1` as its `API_URL`. This distinction is important for directing your requests to the correct service."
+      }
+    ],
+    "model": "NebulaBlockDocsBot"
+  },
+  {
+    "id": "145",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "How do I ensure secure authentication for all my cURL API requests?"
+      },
+      {
+        "from": "gpt",
+        "value": "Always include the `Authorization` header with a Bearer token or API key. For example, using an environment variable for your API key: `-H \"Authorization: Bearer $NEBULA_API_KEY\"`. Replace `$NEBULA_API_KEY` with your actual key."
+      }
+    ],
+    "model": "NebulaBlockDocsBot"
+  },
+  {
+    "id": "146",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "When creating a GPU instance, what are the requirements for `product_id` and `image_id`?"
+      },
+      {
+        "from": "gpt",
+        "value": "Both `product_id` (from List Products API) and `image_id` (from List Images API) must belong to the same data center (`dc_id`) and region. This ensures compatibility for your instance deployment."
+      }
+    ],
+    "model": "NebulaBlockDocsBot"
+  },
+  {
+    "id": "147",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "What fields are returned when I list my API keys, and which one is used for deletion?"
+      },
+      {
+        "from": "gpt",
+        "value": "When listing API keys, the response includes `id`, `name`, `description`, and `partial_key_data`. The `id` field is the unique identifier used to delete an API key via the Delete API Key endpoint."
+      }
+    ],
+    "model": "NebulaBlockDocsBot"
+  },
+  {
+    "id": "148",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "How do I specify the desired model for text generation when using the API?"
+      },
+      {
+        "from": "gpt",
+        "value": "You specify the desired model by providing its full name (e.g., `meta-llama/Llama-3.3-70B-Instruct`) in the `model` parameter within the request body. Refer to the 'Selecting a Model' section in the Text Generation documentation for specific mappings."
+      }
+    ],
+    "model": "NebulaBlockDocsBot"
+  },
+  {
+    "id": "149",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "In image generation, what is the purpose of `num_steps` and `guidance_scale` parameters?"
+      },
+      {
+        "from": "gpt",
+        "value": "`num_steps` (Steps) is the number of inference steps the model will take; higher steps generally lead to better quality but cost more. `guidance_scale` encourages the model to adhere closely to the prompt, but very high values might reduce image quality."
+      }
+    ],
+    "model": "NebulaBlockDocsBot"
+  },
+  {
+    "id": "150",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "Can I use environment variables for my API key in Python scripts for security?"
+      },
+      {
+        "from": "gpt",
+        "value": "Yes, it's highly recommended for security. You can load environment variables using libraries like `python-dotenv` or access them directly via `os.environ.get()`. For example: `NEBULA_API_KEY = os.environ.get(\"NEBULA_API_KEY\")`."
+      }
+    ],
+    "model": "NebulaBlockDocsBot"
+  },
+  {
+    "id": "151",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "What is the `object` field in the Inference API response, and what values can it take?"
+      },
+      {
+        "from": "gpt",
+        "value": "The `object` field indicates the type of response object. For text generation, it can be `chat.completion` (for non-streaming) or `chat.completion.chunk` (for streaming). For embeddings, it's `list`, and for image generation, it's also `list`."
+      }
+    ],
+    "model": "NebulaBlockDocsBot"
+  },
+  {
+    "id": "152",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "How can I check the total running time and total cost of a GPU instance via the API?"
+      },
+      {
+        "from": "gpt",
+        "value": "You can get these details from the `User_Instance_Detail` endpoint (`GET {API_URL}/computing/instance/{id}`). The response will include `running_time` and `total_cost` fields for the specified instance."
+      }
+    ],
+    "model": "NebulaBlockDocsBot"
+  },
+  {
+    "id": "153",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "What are the key differences in payload between a Text-to-Image and Image-to-Image generation request using the API?"
+      },
+      {
+        "from": "gpt",
+        "value": "Both use a `prompt`, `num_steps`, `guidance_scale`, `width`, `height`, and `negative_prompt`. However, Image-to-Image models (like Flux.1 Fill Dev) additionally require `image` and `mask` parameters, which are base64 encoded images, to use an existing image as input and specify areas for modification."
+      }
+    ],
+    "model": "NebulaBlockDocsBot"
+  },
+  {
+    "id": "154",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "How do I properly handle the base64 encoded image data returned from an Image Generation API call in Python?"
+      },
+      {
+        "from": "gpt",
+        "value": "The `b64_json` field contains the base64 string. You need to decode it to binary data, then save it as an image file. Here's an example:\n\n```python\nimport base64\nimport requests\nimport os\n\n# ... (API call setup from previous examples) ...\n# Assuming 'response' is the successful response from image generation API\n\nif response.status_code == 200:\n    image_data_b64 = response.json()['data'][0]['b64_json']\n    decoded_image = base64.b64decode(image_data_b64)\n\n    output_filename = \"generated_image.png\" # Or .jpg, .webp depending on expected format\n    with open(output_filename, \"wb\") as f:\n        f.write(decoded_image)\n    print(f\"Image successfully saved as {output_filename}\")\nelse:\n    print(f\"Error generating image: {response.text}\")\n```"
+      }
+    ],
+    "model": "NebulaBlockDocsBot"
+  },
+  {
+    "id": "155",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "Which model should I use for code generation or completion using the Inference API?"
+      },
+      {
+        "from": "gpt",
+        "value": "For code generation and completion tasks, you should use the `Qwen2.5-Coder-32B` model. You would specify `Qwen/Qwen2.5-Coder-32B-Instruct` as the `model` in your API requests."
+      }
+    ],
+    "model": "NebulaBlockDocsBot"
+  },
+  {
+    "id": "156",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "What are `tool_calls` and `function_calls` in a text generation response, if available?"
+      },
+      {
+        "from": "gpt",
+        "value": "In a text generation response, `tool_calls` and `function_calls` are fields within the `message` object that would contain information about any external tools or functions the AI model used or decided to use in generating its response. These are typically `null` if no such tools/functions were invoked."
+      }
+    ],
+    "model": "NebulaBlockDocsBot"
+  },
+  {
+    "id": "157",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "How do I use the Flux.1 schnell model for image generation with cURL?"
+      },
+      {
+        "from": "gpt",
+        "value": "You can generate images quickly with Flux.1 schnell by specifying its model name in your `POST` request to the image generation endpoint. Here's an example:\n\n```bash\ncurl -X POST 'https://api.nebulablock.com/api/v1/images/generation' \\\n    -H 'Content-Type: application/json' \\\n    -H 'Authorization: Bearer $NEBULA_API_KEY' \\\n    --data-raw '{\n      \"model\":\"black-forest-labs/FLUX.1-schnell\",\n      \"prompt\":\"a sleek silver sports car, futuristic design\",\n      \"num_steps\":20,\n      \"guidance_scale\":7,\n      \"width\":1024,\n      \"height\":1024\n    }'\n```"
+      }
+    ],
+    "model": "NebulaBlockDocsBot"
+  },
+  {
+    "id": "158",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "What Python library is recommended for interacting with Nebula Block's S3-compatible Object Storage?"
+      },
+      {
+        "from": "gpt",
+        "value": "The recommended Python library for interacting with Nebula Block's S3-compatible Object Storage is `boto3`, which is the Amazon Web Services (AWS) SDK for Python."
+      }
+    ],
+    "model": "NebulaBlockDocsBot"
+  },
+  {
+    "id": "159",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "How can I test the connection to Nebula Block Object Storage using Python's `boto3` client?"
+      },
+      {
+        "from": "gpt",
+        "value": "After creating the `boto3` S3 client, you can test the connection by attempting to list buckets. A successful call indicates a working connection.\n\n```python\nimport boto3\nimport os\nfrom botocore.config import Config\n\n# Assuming NEBULA_ACCESS_KEY, NEBULA_SECRET_KEY, NEBULA_ENDPOINT, NEBULA_REGION are set as env vars\ns3_client = boto3.client(\n    's3',\n    aws_access_key_id=os.environ.get('NEBULA_ACCESS_KEY'),\n    aws_secret_access_key=os.environ.get('NEBULA_SECRET_KEY'),\n    endpoint_url=f\"https://{os.environ.get('NEBULA_ENDPOINT')}\",\n    region_name=os.environ.get('NEBULA_REGION'),\n    config=Config(signature_version='s3v4')\n)\n\ntry:\n    s3_client.list_buckets()\n    print(\"Successfully connected to Nebula Block storage!\")\nexcept Exception as e:\n    print(f\"Error connecting to Nebula Block: {e}\")\n```"
+      }
+    ],
+    "model": "NebulaBlockDocsBot"
+  },
+  {
+    "id": "160",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "How do I upload a file to Object Storage using the Python `boto3` client?"
+      },
+      {
+        "from": "gpt",
+        "value": "You use the `upload_file` method of the `boto3` S3 client. It requires the local file path, the bucket name, and the desired object name in the bucket.\n\n```python\nimport boto3\nimport os\nfrom botocore.config import Config\n\n# ... (s3_client creation from previous examples) ...\n\nNEBULA_BUCKET = os.environ.get('NEBULA_BUCKET') # Your target bucket name\nlocal_file = 'my_local_document.txt'\nobject_name = 'documents/my_uploaded_doc.txt'\n\n# Create a dummy file for demonstration\nwith open(local_file, 'w') as f:\n    f.write('This is content for the uploaded file.')\n\ntry:\n    s3_client.upload_file(local_file, NEBULA_BUCKET, object_name)\n    print(f\"File '{local_file}' uploaded successfully as '{object_name}' to bucket '{NEBULA_BUCKET}'.\")\nexcept Exception as e:\n    print(f\"Error uploading file: {e}\")\nfinally:\n    os.remove(local_file) # Clean up dummy file\n```"
+      }
+    ],
+    "model": "NebulaBlockDocsBot"
+  },
+  {
+    "id": "161",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "How can I download a file from Object Storage using Python's `boto3` client?"
+      },
+      {
+        "from": "gpt",
+        "value": "Use the `download_file` method, providing the bucket name, the object name in the bucket, and the desired local path for the downloaded file.\n\n```python\nimport boto3\nimport os\nfrom botocore.config import Config\n\n# ... (s3_client creation from previous examples) ...\n\nNEBULA_BUCKET = os.environ.get('NEBULA_BUCKET') # Your target bucket name\nobject_name = 'documents/my_uploaded_doc.txt' # Name of the object in the bucket\nlocal_download_path = 'downloaded_document.txt'\n\ntry:\n    s3_client.download_file(NEBULA_BUCKET, object_name, local_download_path)\n    print(f\"File '{object_name}' downloaded successfully to '{local_download_path}'.\")\nexcept Exception as e:\n    print(f\"Error downloading file: {e}\")\n```"
+      }
+    ],
+    "model": "NebulaBlockDocsBot"
+  },
+  {
+    "id": "162",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "How do I list objects within a specific Object Storage bucket using Python's `boto3` client?"
+      },
+      {
+        "from": "gpt",
+        "value": "You can use the `list_objects_v2` method to retrieve a list of objects in a bucket. You can also specify a `Prefix` to filter by a folder-like structure.\n\n```python\nimport boto3\nimport os\nfrom botocore.config import Config\n\n# ... (s3_client creation from previous examples) ...\n\nNEBULA_BUCKET = os.environ.get('NEBULA_BUCKET') # Your target bucket name\n\ntry:\n    response = s3_client.list_objects_v2(Bucket=NEBULA_BUCKET, Prefix='documents/') # Example with prefix\n    if 'Contents' in response:\n        print(f\"Objects in bucket '{NEBULA_BUCKET}' (prefix 'documents/'):\")\n        for obj in response['Contents']:\n            print(f\"  - {obj['Key']} ({obj['Size']} bytes)\")\n    else:\n        print(f\"No objects found in bucket '{NEBULA_BUCKET}' with that prefix.\")\nexcept Exception as e:\n    print(f\"Error listing objects: {e}\")\n```"
+      }
+    ],
+    "model": "NebulaBlockDocsBot"
+  },
+  {
+    "id": "163",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "Can I generate a presigned URL for an object to allow temporary access using a Python script?"
+      },
+      {
+        "from": "gpt",
+        "value": "Yes, `boto3`'s `generate_presigned_url` method creates a temporary URL. You specify the operation (e.g., `get_object`), the parameters (bucket and key), and the expiration time in seconds.\n\n```python\nimport boto3\nimport os\nfrom botocore.config import Config\n\n# ... (s3_client creation from previous examples) ...\n\nNEBULA_BUCKET = os.environ.get('NEBULA_BUCKET') # Your target bucket name\nobject_name = 'documents/my_uploaded_doc.txt' # Object to generate URL for\nexpiration_seconds = 3600 # URL valid for 1 hour\n\ntry:\n    url = s3_client.generate_presigned_url(\n        'get_object',\n        Params={'Bucket': NEBULA_BUCKET, 'Key': object_name},\n        ExpiresIn=expiration_seconds\n    )\n    print(f\"Presigned URL for '{object_name}' (valid for {expiration_seconds}s):\\n{url}\")\nexcept Exception as e:\n    print(f\"Error generating presigned URL: {e}\")\n```"
+      }
+    ],
+    "model": "NebulaBlockDocsBot"
+  },
+  {
+    "id": "164",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "How do I send a prompt with multiple turns (user and assistant roles) for text generation using Python?"
+      },
+      {
+        "from": "gpt",
+        "value": "You can simulate a multi-turn conversation by including message objects with both `user` and `assistant` roles in the `messages` array.\n\n```python\nimport requests\nimport os\n\nINFERENCE_API_URL = \"https://inference.nebulablock.com/v1\"\nNEBULA_API_KEY = os.environ.get(\"NEBULA_API_KEY\")\n\nheaders = {\n    \"Content-Type\": \"application/json\",\n    \"Authorization\": f\"Bearer {NEBULA_API_KEY}\"\n}\n\ndata = {\n    \"messages\": [\n        {\"role\": \"user\", \"content\": \"What is the capital of Canada?\"},\n        {\"role\": \"assistant\", \"content\": \"The capital of Canada is Ottawa.\"},\n        {\"role\": \"user\", \"content\": \"And what's its population?\"}\n    ],\n    \"model\": \"meta-llama/Llama-3.3-70B-Instruct\",\n    \"max_tokens\": 50,\n    \"temperature\": 0.7,\n    \"top_p\": 0.9,\n    \"stream\": False\n}\n\nresponse = requests.post(f'{INFERENCE_API_URL}/chat/completions', headers=headers, json=data)\n\nif response.status_code == 200:\n    print(response.json()['choices'][0]['message']['content'])\nelse:\n    print(f\"Error: {response.status_code} - {response.text}\")\n```"
+      }
+    ],
+    "model": "NebulaBlockDocsBot"
+  },
+  {
+    "id": "165",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "What Python library is used for Golang Object Storage SDK and how do I configure it?"
+      },
+      {
+        "from": "gpt",
+        "value": "The Golang Object Storage SDK uses `github.com/aws/aws-sdk-go` (v1). You configure it by setting `accessKey`, `secretKey`, `endpoint` (your Hostname), `region` (e.g., \"US\"), and setting `S3ForcePathStyle: aws.Bool(true)` in `aws.Config` before creating a `session`."
+      }
+    ],
+    "model": "NebulaBlockDocsBot"
+  },
+  {
+    "id": "166",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "How do I list buckets using the Go AWS SDK for Object Storage?"
+      },
+      {
+        "from": "gpt",
+        "value": "After setting up the S3 client (`svc`), you call `svc.ListBuckets(nil)`. The result will contain a slice of `Bucket` objects, from which you can access `Bucket.Name`.\n\n```go\npackage main\n\nimport (\n\t\"fmt\"\n\t\"log\"\n\t\"github.com/aws/aws-sdk-go/aws\"\n\t\"github.com/aws/aws-sdk-go/aws/credentials\"\n\t\"github.com/aws/aws-sdk-go/aws/session\"\n\t\"github.com/aws/aws-sdk-go/service/s3\"\n)\n\nfunc main() {\n\taccessKey := \"YOUR_ACCESS_KEY\"\n\tsecretKey := \"YOUR_SECRET_KEY\"\n\tendpoint := \"YOUR_HOSTNAME\" // Use the Hostname from the Details page.\n\tregion := \"US\"\n\n\ts3Config := &aws.Config{\n\t\tCredentials:      credentials.NewStaticCredentials(accessKey, secretKey, \"\"),\n\t\tEndpoint:         aws.String(endpoint),\n\t\tRegion:           aws.String(region),\n\t\tS3ForcePathStyle: aws.Bool(true),\n\t}\n\n\tsess, err := session.NewSession(s3Config)\n\tif err != nil {\n\t\tlog.Fatalf(\"Failed to create session: %v\", err)\n\t}\n\n\tsvc := s3.New(sess)\n\n\tfmt.Println(\"Attempting to list buckets...\")\n\tresult, err := svc.ListBuckets(nil)\n\tif err != nil {\n\t\tlog.Fatalf(\"Failed to list buckets: %v\", err)\n\t}\n\n\tfmt.Println(\"Successfully connected! Current buckets:\")\n\tfor _, bucket := range result.Buckets {\n\t\tfmt.Printf(\"  - %s\\n\", *bucket.Name)\n\t}\n}\n```"
+      }
+    ],
+    "model": "NebulaBlockDocsBot"
+  },
+  {
+    "id": "167",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "What Maven dependency is needed for the Java AWS S3 SDK example?"
+      },
+      {
+        "from": "gpt",
+        "value": "For the Java AWS S3 SDK example, you need to add the `aws-java-sdk-s3` dependency to your `pom.xml`:\n\n```xml\n<dependency>\n    <groupId>com.amazonaws</groupId>\n    <artifactId>aws-java-sdk-s3</artifactId>\n    <version>1.12.664</version>\n</dependency>\n```"
+      }
+    ],
+    "model": "NebulaBlockDocsBot"
+  },
+  {
+    "id": "168",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "How do I list buckets using the Java AWS S3 SDK?"
+      },
+      {
+        "from": "gpt",
+        "value": "After creating the `AmazonS3` client, you call `s3.listBuckets()`. This returns a `List<Bucket>` which you can iterate through to get bucket names.\n\n```java\nimport com.amazonaws.auth.AWSStaticCredentialsProvider;\nimport com.amazonaws.auth.BasicAWSCredentials;\nimport com.amazonaws.client.builder.AwsClientBuilder;\nimport com.amazonaws.services.s3.AmazonS3;\nimport com.amazonaws.services.s3.AmazonS3ClientBuilder;\nimport com.amazonaws.services.s3.model.Bucket;\n\nimport java.util.List;\n\npublic class Main {\n    public static void main(String[] args) {\n        String accessKey = \"YOUR_ACCESS_KEY\";\n        String secretKey = \"YOUR_SECRET_KEY\";\n        String endpoint = \"YOUR_HOSTNAME\"; // Use the Hostname from the Details page.\n        String region = \"US\";\n\n        AmazonS3 s3 = AmazonS3ClientBuilder.standard()\n            .withEndpointConfiguration(new AwsClientBuilder.EndpointConfiguration(endpoint, region))\n            .withCredentials(new AWSStaticCredentialsProvider(new BasicAWSCredentials(accessKey, secretKey)))\n            .withPathStyleAccessEnabled(true)\n            .build();\n\n        try {\n            List<Bucket> buckets = s3.listBuckets();\n            System.out.println(\"Buckets:\");\n            for (Bucket bucket : buckets) {\n                System.out.println(\"  - \" + bucket.getName());\n            }\n        } catch (Exception e) {\n            System.err.println(\"Error: \" + e.getMessage());\n        }\n    }\n}\n```"
+      }
+    ],
+    "model": "NebulaBlockDocsBot"
+  },
+  {
+    "id": "169",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "What are the common errors to watch out for when using cURL commands with Nebula Block APIs?"
+      },
+      {
+        "from": "gpt",
+        "value": "Common errors include incorrect API URLs (Platform vs. Inference), missing or invalid `Authorization` headers (token/key might be expired or wrong), incorrect `Content-Type` headers for `POST` requests, malformed JSON data in the request body, and using wrong HTTP methods (e.g., `GET` instead of `POST`). Always check the API reference for correct parameters and endpoints."
+      }
+    ],
+    "model": "NebulaBlockDocsBot"
+  },
+  {
+    "id": "170",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "How do I debug API issues when using Python's `requests` library?"
+      },
+      {
+        "from": "gpt",
+        "value": "When debugging in Python, check the `response.status_code` for HTTP errors (e.g., 400, 401, 500). Print `response.text` or `response.json()` to see the detailed error message from the API. Ensure your API key or token is correct and not expired. Also, check your request `headers` and `json` payload to match the API specifications."
+      }
+    ],
+    "model": "NebulaBlockDocsBot"
+  },
+  {
+    "id": "171",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "Is there a specific Python version required for the `boto3` SDK examples for Object Storage?"
+      },
+      {
+        "from": "gpt",
+        "value": "The documentation specifies 'Python installed' as a prerequisite, implying recent Python 3 versions are compatible. Generally, `boto3` supports Python 3.7+."
+      }
+    ],
+    "model": "NebulaBlockDocsBot"
+  },
+  {
+    "id": "172",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "How do I handle streaming responses from the Inference API in a Python script for text generation?"
+      },
+      {
+        "from": "gpt",
+        "value": "When `stream: true`, the `response` object acts as an iterable. You can loop through `response.iter_lines()` and process each chunk. Remember to handle `[DONE]` marker.\n\n```python\nimport requests\nimport os\n\nINFERENCE_API_URL = \"https://inference.nebulablock.com/v1\"\nNEBULA_API_KEY = os.environ.get(\"NEBULA_API_KEY\")\n\nheaders = {\n    \"Content-Type\": \"application/json\",\n    \"Authorization\": f\"Bearer {NEBULA_API_KEY}\"\n}\n\ndata = {\n    \"messages\": [\n        {\"role\": \"user\", \"content\": \"Tell me a long story about a space explorer.\"}\n    ],\n    \"model\": \"meta-llama/Llama-3.3-70B-Instruct\",\n    \"max_tokens\": 300,\n    \"stream\": True\n}\n\nwith requests.post(f'{INFERENCE_API_URL}/chat/completions', headers=headers, json=data, stream=True) as response:\n    if response.status_code == 200:\n        for line in response.iter_lines():\n            if line:\n                decoded_line = line.decode('utf-8')\n                if decoded_line.startswith('data: '):\n                    json_data = decoded_line[len('data: '):].strip()\n                    if json_data != '[DONE]':\n                        try:\n                            chunk = json.loads(json_data)\n                            content = chunk['choices'][0]['delta'].get('content', '')\n                            if content:\n                                print(content, end='', flush=True)\n                        except json.JSONDecodeError:\n                            pass # Ignore malformed lines if any\n    else:\n        print(f\"Error: {response.status_code} - {response.text}\")\n```"
+      }
+    ],
+    "model": "NebulaBlockDocsBot"
+  },
+  {
+    "id": "173",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "What's the maximum file size for uploading to Object Storage via the `s3cmd` CLI?"
+      },
+      {
+        "from": "gpt",
+        "value": "The documentation for `s3cmd` doesn't specify a hard limit imposed by Nebula Block, but states that the UI has a 50 MB limit and recommends `s3cmd` for larger files and folders. This implies `s3cmd` supports larger file uploads, typically governed by S3 protocol limits (which are very high, e.g., 5TB per object)."
+      }
+    ],
+    "model": "NebulaBlockDocsBot"
+  },
+  {
+    "id": "174",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "How do I specify the `seed` parameter for reproducible image generation when using models that support it like Flux.1 schnell, via cURL?"
+      },
+      {
+        "from": "gpt",
+        "value": "If a model supports the `seed` parameter (like Flux.1 schnell), you include it directly in the JSON request body. Using the same seed with the same prompt and parameters ensures the exact same image is generated.\n\n```bash\ncurl -X POST 'https://api.nebulablock.com/api/v1/images/generation' \\\n    -H 'Content-Type: application/json' \\\n    -H 'Authorization: Bearer $NEBULA_API_KEY' \\\n    --data-raw '{\n      \"model\":\"black-forest-labs/FLUX.1-schnell\",\n      \"prompt\":\"a majestic dragon soaring over mountains\",\n      \"num_steps\":25,\n      \"guidance_scale\":7,\n      \"seed\": 12345, \\\n      \"width\":1024,\n      \"height\":1024\n    }'\n```"
+      }
+    ],
+    "model": "NebulaBlockDocsBot"
+  },
+  {
+    "id": "175",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "What is the `finish_reason` in a text generation response, and what values can it take?"
+      },
+      {
+        "from": "gpt",
+        "value": "The `finish_reason` field indicates why the model stopped generating output. Common values include `stop` (model generated a natural stopping point), `length` (model reached `max_tokens` limit), or `content_filter` (output was flagged by a safety system)."
+      }
+    ],
+    "model": "NebulaBlockDocsBot"
+  },
+  {
+    "id": "176",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "How do I interpret the `usage` field in a text generation response?"
+      },
+      {
+        "from": "gpt",
+        "value": "The `usage` field provides token consumption details:\n- `completion_tokens`: Number of tokens generated in the response.\n- `prompt_tokens`: Number of tokens in the input prompt.\n- `total_tokens`: Sum of `completion_tokens` and `prompt_tokens`."
+      }
+    ],
+    "model": "NebulaBlockDocsBot"
+  },
+  {
+    "id": "177",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "Can I filter the list of available GPU products by a specific GPU type or region via the API?"
+      },
+      {
+        "from": "gpt",
+        "value": "The `List Products` API (`GET {API_URL}/computing/products`) returns products grouped by `region` and `gpu_type` in its `data` field. While there aren't direct query parameters for filtering *in the API call itself*, you can easily parse the JSON response in your code (e.g., Python, Go, Java) to filter by these criteria after retrieval."
+      }
+    ],
+    "model": "NebulaBlockDocsBot"
+  },
+  {
+    "id": "178",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "If I create a GPU instance without specifying an SSH key, how do I get the login credentials?"
+      },
+      {
+        "from": "gpt",
+        "value": "If an SSH Public Key is not supported or not selected during instance creation, a secure username and password will be provided to you. You can find these credentials, along with the Public IP Address, on your instance detail page in the customer portal."
+      }
+    ],
+    "model": "NebulaBlockDocsBot"
+  },
+  {
+    "id": "179",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "What's the meaning of `object` and `index` fields in the Embedding Generation API response?"
+      },
+      {
+        "from": "gpt",
+        "value": "In the Embedding Generation API response, `object` describes the type of data returned, usually `embedding` for individual embedding objects, or `list` for the overall response containing multiple embeddings. The `index` identifies the position of a particular embedding in the `data` array, corresponding to the order of sentences in your input list."
+      }
+    ],
+    "model": "NebulaBlockDocsBot"
+  },
+  {
+    "id": "180",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "How do I know if an Object Storage bucket name I chose is valid or globally unique before trying to create it?"
+      },
+      {
+        "from": "gpt",
+        "value": "The documentation states that 'Bucket names must be globally unique' and provides rules for naming. If `s3cmd` (or an SDK method) fails to create one, it usually means the name is already taken or violates the naming rules. There isn't a separate API endpoint to pre-check uniqueness, so you would typically attempt creation and handle the error if it fails."
+      }
+    ],
+    "model": "NebulaBlockDocsBot"
+  },
+  {
+    "id": "181",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "Can I use the `s3cmd` tool to batch upload multiple files to an Object Storage bucket?"
+      },
+      {
+        "from": "gpt",
+        "value": "Yes, you can specify multiple local file paths directly in the `s3cmd put` command to upload them to a bucket. For example: `s3cmd put C:\\Users\\Username\\Desktop\\video1.mp4 C:\\Users\\Username\\Desktop\\video2.mp4 s3://test-bucket/`."
+      }
+    ],
+    "model": "NebulaBlockDocsBot"
+  },
+  {
+    "id": "182",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "How do I perform a batch download of multiple files from an Object Storage bucket using `s3cmd`?"
+      },
+      {
+        "from": "gpt",
+        "value": "You can use either `s3cmd sync` or `s3cmd get` with multiple object paths to download files in batch. For example: `s3cmd get s3://test-bucket/video1.mp4 s3://test-bucket/video2.mp4 C:\\Users\\Username\\Desktop\\download_temp\\`."
+      }
+    ],
+    "model": "NebulaBlockDocsBot"
+  },
+  {
+    "id": "183",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "Can I delete multiple files at once from an Object Storage bucket using `s3cmd`?"
+      },
+      {
+        "from": "gpt",
+        "value": "Yes, `s3cmd del` supports specifying multiple object paths for batch deletion. For example: `s3cmd del s3://test-bucket/video1.mp4 s3://test-bucket/video2.mp4 s3://test-bucket/video3.mp4`."
+      }
+    ],
+    "model": "NebulaBlockDocsBot"
+  },
+  {
+    "id": "184",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "How does the `endpoint_url` need to be formatted when configuring the Python `boto3` client for Object Storage?"
+      },
+      {
+        "from": "gpt",
+        "value": "The `endpoint_url` for `boto3` needs to include the `https://` prefix. So, if your hostname is `storage.nebulablock.com`, your `endpoint_url` should be `https://storage.nebulablock.com`."
+      }
+    ],
+    "model": "NebulaBlockDocsBot"
+  },
+  {
+    "id": "185",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "What is the significance of `withPathStyleAccessEnabled(true)` in the Java AWS S3 SDK configuration for Object Storage?"
+      },
+      {
+        "from": "gpt",
+        "value": "Setting `withPathStyleAccessEnabled(true)` ensures that the S3 client uses path-style access (e.g., `http://endpoint/bucketname/key`) instead of virtual host style access (e.g., `http://bucketname.endpoint/key`). This is important for compatibility with many S3-compatible storage services that don't support virtual hosting."
+      }
+    ],
+    "model": "NebulaBlockDocsBot"
+  },
+  {
+    "id": "186",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "What is the `signature_version` parameter used for in the Python `boto3` client configuration for Object Storage?"
+      },
+      {
+        "from": "gpt",
+        "value": "The `signature_version='s3v4'` parameter in the `boto3` client configuration specifies the version of the signature algorithm used to sign requests. S3 Signature Version 4 is the latest and most secure option, ensuring proper authentication with S3-compatible services like Nebula Block."
+      }
+    ],
+    "model": "NebulaBlockDocsBot"
+  },
+  {
+    "id": "187",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "If I'm migrating from another cloud provider, what parts of the Nebula Block documentation are most relevant?"
+      },
+      {
+        "from": "gpt",
+        "value": "You should focus on the 'Getting Started' section, specifically 'Deploy Products' for GPU Instances and Object Storage. The 'API Reference' (especially Platform API sections for Instances and Object Storage) will be crucial for programmatic migration and management. The Object Storage SDK and s3cmd tutorials will be very helpful for data transfer."
+      }
+    ],
+    "model": "NebulaBlockDocsBot"
+  },
+  {
+    "id": "188",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "What metrics are provided for Object Storage billing in the UI?"
+      },
+      {
+        "from": "gpt",
+        "value": "The Object Storage deployment's details page shows 'Storage Usage' (how much data you're storing), 'Bandwidth Usage' (how much data has been transferred out), and 'Current Charges' (total charges calculated from storage and bandwidth rates). These values are updated hourly."
+      }
+    ],
+    "model": "NebulaBlockDocsBot"
+  },
+  {
+    "id": "189",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "How do I ensure that my Python environment has the necessary libraries for the Object Storage SDK examples?"
+      },
+      {
+        "from": "gpt",
+        "value": "You need to install `boto3` and `python-dotenv` using pip. The command for this is: `pip install boto3 python-dotenv`. This ensures you can run the provided Python SDK code."
+      }
+    ],
+    "model": "NebulaBlockDocsBot"
+  },
+  {
+    "id": "190",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "What kind of information does the `data` field return in a successful `List User Instances` API response?"
+      },
+      {
+        "from": "gpt",
+        "value": "The `data` field returns an array of objects, each representing an active GPU instance. These objects include `id`, `region`, `product_type`, `host_name`, `cpu_cores`, `ram`, `gpu_type`, `gpu_count`, `disk_size`, `ephemeral`, `public_ipv4`, `price_per_hour`, `os`, and `status`."
+      }
+    ],
+    "model": "NebulaBlockDocsBot"
+  },
+  {
+    "id": "191",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "Can I use the `s3cmd` tool to create a bucket if it already exists?"
+      },
+      {
+        "from": "gpt",
+        "value": "If you try to create a bucket with `s3cmd mb s3://my-bucket-name` and a bucket with that name already exists, `s3cmd` will typically return an error indicating that the bucket already exists or that the name is not globally unique. It will not overwrite or modify an existing bucket."
+      }
+    ],
+    "model": "NebulaBlockDocsBot"
+  },
+  {
+    "id": "192",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "What is the recommended way to store API keys in Python applications for production?"
+      },
+      {
+        "from": "gpt",
+        "value": "It is strongly recommended not to hardcode API keys directly in your Python code. Instead, store them in environment variables or use a secret management service. The `python-dotenv` library is useful for loading environment variables from a `.env` file during development."
+      }
+    ],
+    "model": "NebulaBlockDocsBot"
+  },
+  {
+    "id": "193",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "How do I view the generated image after an API call if it's returned as base64 JSON?"
+      },
+      {
+        "from": "gpt",
+        "value": "The API returns the image as a base64 encoded string within a `b64_json` field. To view it, you need to decode this string. In Python, you'd use `base64.b64decode()` and then save the resulting bytes to an image file (e.g., `.png`, `.jpg`). In a web context, you could embed it directly in an `<img>` tag with a data URI."
+      }
+    ],
+    "model": "NebulaBlockDocsBot"
+  },
+  {
+    "id": "194",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "Does Nebula Block offer any models specifically for reasoning or problem-solving in text generation?"
+      },
+      {
+        "from": "gpt",
+        "value": "Yes, for text generation, the `Qwen-QwQ-32B` model is designed for reasoning and problem-solving, making it suitable for complex queries that require advanced cognitive capabilities from the AI."
+      }
+    ],
+    "model": "NebulaBlockDocsBot"
+  },
+  {
+    "id": "195",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "What information does the `data` field contain in a successful `List Products` API response for GPU instances?"
+      },
+      {
+        "from": "gpt",
+        "value": "The `data` field returns a dictionary where keys are regions (e.g., `CANADA`) and values are dictionaries grouping products by `gpu_type` (e.g., `H100`, `A100`, `RTX`). Each product then has properties like `id`, `dc_id`, `product_type`, `region`, `price_per_hour`, `cpu`, `ram`, `gpu`, `gpu_type`, `gpu_count`, `disk_size`, `ephemeral`, `stock`, `cycle`, and `is_available`."
+      }
+    ],
+    "model": "NebulaBlockDocsBot"
+  }
+    ]
